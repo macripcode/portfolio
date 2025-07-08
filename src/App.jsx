@@ -12,6 +12,10 @@ function App() {
   const [theme, setTheme] = useState(LanguageContext);
   const { lang, setLang } = useContext(LanguageContext);
 
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
     <main>
       <Header theme={theme} setTheme={setTheme} lang={lang} setLang={setLang} />

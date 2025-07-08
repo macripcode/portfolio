@@ -7,9 +7,6 @@ function Hero() {
   const { lang } = useContext(LanguageContext);
   const { Greeting, Title, Text } = translations[lang].Hero
 
-  console.log(Title)
-  console.log(lang)
-
   return (
   
     <section id="hero">

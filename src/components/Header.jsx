@@ -21,13 +21,13 @@ function Header({ theme, setTheme, lang, setLang }) {
       "--text",
       "--subtitle",
       "--line"  
-    ], "body", theme);
+    ], "body", [theme]);
 
     const {
       "--font-heading": fontHeading
     } = useCSSVariables([  
       "--font-heading"
-    ], "root", theme);
+    ], "root", [theme]);
 
   // Change lang
   function handleLangChange(selectedOption) {
@@ -43,6 +43,9 @@ function Header({ theme, setTheme, lang, setLang }) {
     { value: "en", label: "🇺🇸 English" },
     { value: "es", label: "🇨🇴 Español" },
   ];
+
+  console.log("subtitleColor", subtitleColor)
+  console.log("theme", theme)
 
   return (
     <header
@@ -80,15 +83,15 @@ function Header({ theme, setTheme, lang, setLang }) {
                 ...base,
                 borderRadius: 999,
                 borderColor: lineColor,
-                backgroundColor: "transparent",
-                color: subtitleColor,
+                backgroundColor: bgLogoColor,
+                color: bgColor,
                 fontFamily: fontHeading,
                 boxShadow: "none",
                 padding: "2px",
               }),
               singleValue: (base) => ({
                 ...base,
-                color: subtitleColor,
+                color: bgColor,
                 fontWeight: "bold",
                 fontFamily: fontHeading,
               }),
@@ -126,7 +129,7 @@ function Header({ theme, setTheme, lang, setLang }) {
               padding: "0.3rem 0.8rem",
               borderRadius: "999px",
               border: `1px solid ${lineColor}` ,
-              backgroundColor: bgColor,
+              backgroundColor: bgLogoColor,
               color: subtitleColor,
               fontFamily: fontHeading,
               fontWeight: "bold",

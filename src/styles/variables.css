@@ -1,5 +1,6 @@
 :root{
   --white:     #ffffff;
+  --black:     #000000
   --gray-50:   #f9f9f9;
   --gray-100:  #f0f0f0;
   --gray-200:  #e0e0e0;
@@ -20,16 +21,16 @@ body.dark {
   --background: #121212;
   --background-logo: var(--white);
   --title: var(--gray-400);
-  --subtitle: var(--gray-500);
+  --subtitle: var(--gray-100);
   --text: var(--gray-100);
   --line: var(--gray-500)
 }
 
 body.light {
   --background: #f0f0f0;
-  --background-logo: var(--white);
+  --background-logo: var(--gray-600);
   --title: var(--gray-400);
-  --subtitle: var(--gray-500);
+  --subtitle: var(--gray-900);
   --text: var(--gray-800);
-  --line: var(--gray-800)
+  --line: var(var(--black))
 }
