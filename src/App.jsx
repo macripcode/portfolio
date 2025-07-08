@@ -3,18 +3,22 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
-import { LanguageProvider } from "./components/LanguageContext";
+import { useContext, useState, useEffect } from "react";
+
+import { LanguageContext } from "./context/LanguageContext";
+import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
+  const [theme, setTheme] = useState(LanguageContext);
+  const { lang, setLang } = useContext(LanguageContext);
+
   return (
-    <LanguageProvider>
-      <Header />
-      <main >
-        <Hero />
-        <Projects />
-        <Contact />
-      </main>
-    </LanguageProvider>
+    <main>
+      <Header theme={theme} setTheme={setTheme} lang={lang} setLang={setLang} />
+      <Hero />
+      <Projects />
+      <Contact />
+    </main>
   );
 }
 
