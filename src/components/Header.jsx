@@ -8,15 +8,33 @@ import React from "react";
 import Select from "react-select";
 
 function Header({ theme, setTheme, lang, setLang }) {
-  const { "--background": bgColor, "--text": textColor } = 
-    useCSSVariables([  "--background", "--text", ]);
+  const { 
+    "--background":      bgColor,
+    "--background-logo": bgLogoColor, 
+    "--text":            textColor,
+    "--subtitle":        subtitleColor, 
+    "--line":            lineColor
+   } = 
+    useCSSVariables([  
+      "--background", 
+      "--background-logo",
+      "--text",
+      "--subtitle",
+      "--line"  
+    ], "body", theme);
 
-  // Cambiar idioma
+    const {
+      "--font-heading": fontHeading
+    } = useCSSVariables([  
+      "--font-heading"
+    ], "root", theme);
+
+  // Change lang
   function handleLangChange(selectedOption) {
     setLang(selectedOption.value);
   }
 
-  // Cambiar tema
+  // Change Theme
   function toggleTheme() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   }
@@ -29,14 +47,11 @@ function Header({ theme, setTheme, lang, setLang }) {
   return (
     <header
       className="header"
-      style={{
-        backgroundColor: theme === "dark" ? "#121212" : "#f0f0f0",
-        color: theme === "dark" ? "#f0f0f0" : "#121212",
-      }}
+      style={{ backgroundColor: bgColor }}
     >
       <div
         className="div-logo"
-        style={{ backgroundColor: theme === "dark" ? "#333333" : "#e0e0e0" }}
+        style={{ backgroundColor: bgLogoColor }}
       ></div>
 
       <div>
@@ -64,46 +79,40 @@ function Header({ theme, setTheme, lang, setLang }) {
               control: (base) => ({
                 ...base,
                 borderRadius: 999,
-                borderColor: "#f4b400",
+                borderColor: lineColor,
                 backgroundColor: "transparent",
-                color: theme === "dark" ? "#f4b400" : "#121212",
-                fontFamily: "'Julius Sans One', sans-serif",
+                color: subtitleColor,
+                fontFamily: fontHeading,
                 boxShadow: "none",
                 padding: "2px",
               }),
               singleValue: (base) => ({
                 ...base,
-                color: theme === "dark" ? "#f4b400" : "#121212",
+                color: subtitleColor,
                 fontWeight: "bold",
-                fontFamily: "'Julius Sans One', sans-serif",
+                fontFamily: fontHeading,
               }),
               option: (base, state) => ({
                 ...base,
                 backgroundColor: state.isSelected
-                  ? theme === "dark"
-                    ? "#333333"
-                    : "#e0e0e0"
-                  : "transparent",
+                  ? subtitleColor
+                  :  bgColor,
                 color: state.isSelected
-                  ? theme === "dark"
-                    ? "#f4b400"
-                    : "#121212"
-                  : theme === "dark"
-                  ? "#f0f0f0"
-                  : "#121212",
+                  ? bgColor
+                  : subtitleColor,
                 fontWeight: state.isSelected ? "bold" : "normal",
-                fontFamily: "'Julius Sans One', sans-serif",
+                fontFamily: fontHeading,
                 cursor: "pointer",
-              }),
+              }), 
               dropdownIndicator: (base) => ({
                 ...base,
-                color: theme === "dark" ? "#f4b400" : "#121212",
+                color: subtitleColor,
               }),
               indicatorSeparator: () => ({ display: "none" }),
               menu: (base) => ({
                 ...base,
-                backgroundColor: theme === "dark" ? "#121212" : "#ffffff",
-                fontFamily: "'Julius Sans One', sans-serif",
+                backgroundColor: "transparent",
+                fontFamily: fontHeading               
               }),
             }}
           />
@@ -116,10 +125,10 @@ function Header({ theme, setTheme, lang, setLang }) {
             style={{
               padding: "0.3rem 0.8rem",
               borderRadius: "999px",
-              border: "1px solid #f4b400", // 🟡 borde dorado
-              backgroundColor: theme === "dark" ? "#333333" : "#e0e0e0",
-              color: theme === "dark" ? "#f4b400" : "#121212",
-              fontFamily: "'Julius Sans One', sans-serif",
+              border: `1px solid ${lineColor}` ,
+              backgroundColor: bgColor,
+              color: subtitleColor,
+              fontFamily: fontHeading,
               fontWeight: "bold",
               fontSize: "1rem",
               cursor: "pointer",

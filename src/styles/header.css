@@ -46,7 +46,7 @@
   background-image: url('/logo-pattern.png'); 
   background-size: cover;
   background-position: center;
-  border: 1px solid #f4b400;
+  border: 1px solid var(--line);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -55,9 +55,9 @@
 
 nav a {
   margin: 0 1rem;
-  color: #f4b400;
+  color: var(--subtitle);
   font-size: 20px;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: var(--font-heading);
   letter-spacing: 1px;
   text-decoration: none;
   position: relative;
@@ -69,7 +69,7 @@ nav a::after {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #f4b400;
+  background-color: var(--subtitle);
   bottom: -4px;
   left: 0;
   transition: width 0.3s ease;
