@@ -1,33 +1,94 @@
 /* src/styles/header.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--background);
-    color: var(--text);
-  }
-  
-  .header nav a {
-    margin: 0 1rem;
-  }
-  
-  .header select,
-  .header button {
-    margin-left: 1rem;
-  }
-  
-  .main-logo{
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #000000;
+  color: var(--text);
+  border-bottom: 1px solid #2a2a2a;
 
-  .main-logo img {
+  /* 💥 Elimina los márgenes y límites */
+  max-width: 100%;
+  margin: 0;
+}
+
+
+.header nav a {
+  margin: 0 1rem;
+}
+
+.header select,
+.header button {
+  margin-left: 1rem;
+}
+
+.main-logo {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.main-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+
+.div-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url('/logo-pattern.png'); 
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #f4b400;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+nav a {
+  margin: 0 1rem;
+  color: #f4b400;
+  font-size: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f4b400;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+.div-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.theme-btn:hover {
+  background-color: #f4b400;
+  color: #000;
 }

@@ -1,15 +1,15 @@
-/* src/styles/variables.css */
 body.dark {
-    --background: #121212;
-    --text: #f0f0f0;
-    --accent: #d4af37;
-    --muted: #b0b0b0;
-  }
-  
-  body.light {
-    --background: #f0f0f0;
-    --text: #121212;
-    --accent: #d4af37;
-    --muted: #555555;
-  }
-  
+  --background: #121212;
+  --text: #f0f0f0;
+  --light-gray: #d5cfc7;
+  --dark-gray: #3e3e3e;
+  --muted: #b0b0b0;
+}
+
+body.light {
+  --background: #f0f0f0;
+  --text: #121212;
+  --light-gray: #d5cfc7;
+  --dark-gray: #3e3e3e;
+  --muted: #555555;
+}
