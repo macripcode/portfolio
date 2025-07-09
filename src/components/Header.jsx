@@ -1,40 +1,40 @@
-import "../styles/header.css";
+import React, { useContext } from "react";
+
+import Select from "react-select";
 
 import { useCSSVariables } from "../hooks/useCSSVariables";
 
-import { useEffect, useState } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+import { LanguageContext } from "../context/LanguageContext";
+import { useTranslation } from "../context/TranslationContext";
 
-import React from "react";
-import Select from "react-select";
+import "../styles/header.css";
 
-function Header({ theme, setTheme, lang, setLang }) {
-  const { 
-    "--background":      bgColor,
-    "--background-logo": bgLogoColor, 
-    "--text":            textColor,
-    "--subtitle":        subtitleColor, 
-    "--line":            lineColor
-   } = 
-    useCSSVariables([  
-      "--background", 
-      "--background-logo",
-      "--text",
-      "--subtitle",
-      "--line"  
-    ], "body", [theme]);
+function Header() {
+  const { theme, setTheme } = useContext(ThemeContext);
+  const { lang, setLang } = useContext(LanguageContext);
 
-    const {
-      "--font-heading": fontHeading
-    } = useCSSVariables([  
-      "--font-heading"
-    ], "root", [theme]);
+  const translation = useTranslation();
+  const navbar = translation.Header.navbar;
 
-  // Change lang
-  function handleLangChange(selectedOption) {
-    setLang(selectedOption.value);
-  }
+  const {
+    "--background": bgColor,
+    "--background-logo": bgLogoColor,
+    "--text": textColor,
+    "--subtitle": subtitleColor,
+    "--line": lineColor,
+  } = useCSSVariables(
+    ["--background", "--background-logo", "--text", "--subtitle", "--line"],
+    "body",
+    [theme]
+  );
 
-  // Change Theme
+  const { "--font-heading": fontHeading } = useCSSVariables(
+    ["--font-heading"],
+    "root",
+    [theme]
+  );
+
   function toggleTheme() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   }
@@ -44,30 +44,20 @@ function Header({ theme, setTheme, lang, setLang }) {
     { value: "es", label: "🇨🇴 Español" },
   ];
 
-  console.log("subtitleColor", subtitleColor)
-  console.log("theme", theme)
-
   return (
-    <header
-      className="header"
-      style={{ backgroundColor: bgColor }}
-    >
-      <div
-        className="div-logo"
-        style={{ backgroundColor: bgLogoColor }}
-      ></div>
+    <header className="header" style={{ backgroundColor: bgColor }}>
+      <div className="div-logo" style={{ backgroundColor: bgLogoColor }}></div>
 
       <div>
         <nav>
-          <a href="#hero" style={{ margin: "0 1rem" }}>
-            About Me
-          </a>
-          <a href="#projects" style={{ margin: "0 1rem" }}>
-            Work
-          </a>
-          <a href="#contact" style={{ margin: "0 1rem" }}>
-            Contact
-          </a>
+          {navbar.map((label, index) => {
+            const hrefs = ["#hero", "#projects", "#contact"];
+            return (
+              <a key={index} href={hrefs[index]} style={{ margin: "0 1rem" }}>
+                {label}
+              </a>
+            );
+          })}
         </nav>
       </div>
 
@@ -97,16 +87,12 @@ function Header({ theme, setTheme, lang, setLang }) {
               }),
               option: (base, state) => ({
                 ...base,
-                backgroundColor: state.isSelected
-                  ? subtitleColor
-                  :  bgColor,
-                color: state.isSelected
-                  ? bgColor
-                  : subtitleColor,
+                backgroundColor: state.isSelected ? subtitleColor : bgColor,
+                color: state.isSelected ? bgColor : subtitleColor,
                 fontWeight: state.isSelected ? "bold" : "normal",
                 fontFamily: fontHeading,
                 cursor: "pointer",
-              }), 
+              }),
               dropdownIndicator: (base) => ({
                 ...base,
                 color: subtitleColor,
@@ -115,7 +101,7 @@ function Header({ theme, setTheme, lang, setLang }) {
               menu: (base) => ({
                 ...base,
                 backgroundColor: "transparent",
-                fontFamily: fontHeading               
+                fontFamily: fontHeading,
               }),
             }}
           />
@@ -128,7 +114,7 @@ function Header({ theme, setTheme, lang, setLang }) {
             style={{
               padding: "0.3rem 0.8rem",
               borderRadius: "999px",
-              border: `1px solid ${lineColor}` ,
+              border: `1px solid ${lineColor}`,
               backgroundColor: bgLogoColor,
               color: subtitleColor,
               fontFamily: fontHeading,

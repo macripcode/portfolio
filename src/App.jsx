@@ -18,10 +18,10 @@ function App() {
 
   return (
     <main>
-      <Header theme={theme} setTheme={setTheme} lang={lang} setLang={setLang} />
-      <Hero />
+      <Header />
+      {/* <Hero/>
       <Projects />
-      <Contact />
+      <Contact /> */}
     </main>
   );
 }

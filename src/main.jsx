@@ -7,12 +7,16 @@ import "./styles/global.css";
 
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
+import { TranslationProvider } from "./context/TranslationContext.jsx";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <LanguageProvider>
       <ThemeProvider>
-      <App />
+        <TranslationProvider>
+          <App />
+        </TranslationProvider>
       </ThemeProvider>
     </LanguageProvider>
   </StrictMode>
