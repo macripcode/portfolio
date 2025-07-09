@@ -26,6 +26,7 @@ body.dark {
   --line: var(--gray-500)
   --hero-timeline-bg: var(--gray-600);
   --hero-timeline-color: var(--gray-100);
+  --hero-timeline-bgIcon: var(--gray-800);
 }
 
 body.light {
@@ -37,4 +38,5 @@ body.light {
   --line: var(var(--black))
   --hero-timeline-bg: var(--gray-100);
   --hero-timeline-color: var(--gray-600);
+  --hero-timeline-bgIcon: var(--gray-800);
 }

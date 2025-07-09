@@ -18,9 +18,9 @@ function App() {
 
   return (
     <main>
-      <Header />
-      {/* <Hero/>
-      <Projects />
+      <Header/>
+       <Hero/>
+      {/* <Projects />
       <Contact /> */}
     </main>
   );
