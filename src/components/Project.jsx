@@ -1,8 +1,14 @@
 // components/Project.jsx
 import { useState } from "react";
 
+import { useTranslation } from "../context/TranslationContext";
+
 function Project({ title, description, techStack }) {
   const [expanded, setExpanded] = useState(false);
+
+  const translation = useTranslation();
+  const viewMore = translation.Hero.Experience.viewMore;
+  const viewLess = translation.Hero.Experience.viewLess;
 
   return (
     <div className="project">
@@ -19,7 +25,7 @@ function Project({ title, description, techStack }) {
           marginBottom: "0.5rem",
         }}
       >
-        {expanded ? "Show less" : "Curious? Click to learn more"}
+        {expanded ? viewLess : viewMore}
       </button>
 
       {expanded && (

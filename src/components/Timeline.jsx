@@ -82,7 +82,7 @@ function Timeline() {
                     return (
                       <Project
                         key={index}
-                        title={project.title}
+                        title={project.title}                       
                         description={project.description}
                         techStack={project.techStack}
                       />

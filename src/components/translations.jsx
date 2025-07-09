@@ -12,6 +12,8 @@ export const translations = {
       `,
       Experience: {
         etitle: `Experiencia Profesional y Educación`,
+        viewMore:`Show More`,
+        viewLess: `Show less`,
         careerPath: [
           {
             type: "job",
@@ -118,6 +120,8 @@ export const translations = {
       `,
       Experience: {
         etitle: `Experiencia Profesional y Educación`,
+        viewMore:`Mostrar más`,
+        viewLess: `Mostrar menos`,
         careerPath: [
           {
             type: "job",
