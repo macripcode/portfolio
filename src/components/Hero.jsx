@@ -23,7 +23,9 @@ function Hero() {
   return (
     <section id="hero">
       <div className="hero-description-div">
-        <div className="picture-div"></div>
+        <div className="picture-div">
+          <img src="/hero-square.jpeg" alt="profile picture"></img>
+        </div>
         <div className="text-div">
           <div className="greeting-div">
             <h1>{greeting}</h1>
