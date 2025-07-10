@@ -9,7 +9,6 @@ import Timeline from "./Timeline";
 import "../styles/hero.css";
 
 function Hero() {
-
   const { theme } = useContext(ThemeContext);
   const { lang } = useContext(LanguageContext);
 
@@ -19,27 +18,41 @@ function Hero() {
   const greeting = hero.Greeting;
   const title = hero.Title;
   const text = hero.Text;
+  const downloadMyCv = hero.DownloadMyCV;
+  const contactMe = hero.ContactMe;
+
+
 
   return (
     <section id="hero">
       <div className="hero-description-div">
-        <div className="picture-div">
-          <img src="/hero-square.jpeg" alt="profile picture"></img>
-        </div>
-        <div className="text-div">
-          <div className="greeting-div">
-            <h1>{greeting}</h1>
+        <div className="hero-description-content">
+          <div className="text-div">
+            <div className="greeting-div">
+              <h1>{greeting}</h1>
+            </div>
+            <div
+              className="description-div"
+              dangerouslySetInnerHTML={{ __html: text }}
+            ></div>
           </div>
-          <div
-            className="description-div"
-            dangerouslySetInnerHTML={{ __html: text }}
-          ></div>
+          <div className="picture-div">
+            <img src="/hero-square.jpeg" alt="profile picture"></img>
+          </div>
+        </div>
+        <div className="hero-description-buttons">
+          <div className="div-buttons">
+            <a href="/files/cristina-portilla.pdf" download>
+              <span>{downloadMyCv}</span>
+            </a>
+            <a href="#contact">
+              <span>{contactMe}</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="hero-experience-div">
-        <Timeline></Timeline>
-      </div>
+      <Timeline></Timeline>
     </section>
   );
 }

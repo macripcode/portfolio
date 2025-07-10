@@ -39,18 +39,15 @@ function Timeline() {
 
   return (
     <div className="hero-experience-div">
-      <h2>{etitle}</h2>
+      <div className="title-div">
+        <h2>{etitle}</h2>
+      </div>
+      
 
       <div className="timeline-div">
         <VerticalTimeline>
           {careerPath.map((item, index) => {
             const { type, date, rol, description, location, projects } = item;
-
-            console.log("type", type);
-            console.log("date", date);
-            console.log("description", description);
-            console.log("location", location);
-            console.log("projects", projects);
 
             return (
               <VerticalTimelineElement

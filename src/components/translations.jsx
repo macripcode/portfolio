@@ -10,8 +10,10 @@ export const translations = {
         <p>I'm a consistent and disciplined frontend developer focused on building visually appealing, functional, and scalable solutions with a strong emphasis on UI/UX design.</p>
         <p>I also have experience with backend technologies like <strong>PHP</strong> and <strong>Django</strong>, giving me a well-rounded perspective on web development.</p>
       `,
+      DownloadMyCV: `Download My CV`,
+      ContactMe: `Contact Me`,
       Experience: {
-        etitle: `Experiencia Profesional y Educación`,
+        etitle: `Professional Experience and Education`,
         viewMore:`Show More`,
         viewLess: `Show less`,
         careerPath: [
@@ -118,6 +120,8 @@ export const translations = {
         <p>Soy una desarrolladora frontend constante y disciplinada, enfocada en crear soluciones visualmente atractivas, funcionales y escalables, con una fuerte atención al diseño UI/UX.</p>
         <p>Además, cuento con experiencia previa en tecnologías backend como <strong>PHP</strong> y <strong>Django</strong>, lo que me permite tener una visión integral del desarrollo web.</p>
       `,
+      DownloadMyCV: `Descarga mi CV`,
+      ContactMe: `Contactame`,
       Experience: {
         etitle: `Experiencia Profesional y Educación`,
         viewMore:`Mostrar más`,
