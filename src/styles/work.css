@@ -48,13 +48,57 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--work-content-background);
   color: var(--work-content-color);
+  gap: 20px;
 }
 
 .resource-div{
   width: 100%;
   height: 300px;
 }
+
+.div-content{
+  background-color: var(--work-content-background);
+  padding: 10px;
+  text-align: left;
+  
+}
+
+.title-project{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.description-project, .techstack-project{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.link-project{
+  color: var(--work-content-color);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.link-project a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.link-project a:hover {
+  text-decoration: underline;
+}
+
+.techstack-project {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.date-project {
+  font-size: 0.85rem;
+}
+
 
 

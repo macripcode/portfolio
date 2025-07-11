@@ -14,7 +14,7 @@ export const translations = {
       ContactMe: `Contact Me`,
       Experience: {
         etitle: `Professional Experience and Education`,
-        viewMore:`Show More`,
+        viewMore: `Show More`,
         viewLess: `Show less`,
         careerPath: [
           {
@@ -30,20 +30,17 @@ export const translations = {
                   `Reduced user-reported bugs by 40%, as measured by support tickets, by fixing time display logic and ensuring accurate music playback.`,
                   `Increased documentation clarity by 10%, as measured by faster onboarding, by mapping and documenting legacy internal systems.`,
                 ],
-                techStack: [
-                  "HTML",
-                  "CSS", 
-                  "JavaScript", 
-                  "Python/Django"],
+                techStack: ["HTML", "CSS", "JavaScript", "Python/Django"],
               },
               {
                 title: "Little Caesars Project",
                 description: [
                   `Completed 100% of development tasks on time, as measured by delivery deadlines, by integrating the Daypart feature into legacy systems.`,
-                  `Strengthened client-vendor relationship, as measured by positive feedback post-demo, by delivering a stable and fully working features implementation.`,`Maintained high system stability over 4 years, as measured by consistent uptime and bug resolution, by addressing reported issues and integrating new features.`,
+                  `Strengthened client-vendor relationship, as measured by positive feedback post-demo, by delivering a stable and fully working features implementation.`,
+                  `Maintained high system stability over 4 years, as measured by consistent uptime and bug resolution, by addressing reported issues and integrating new features.`,
                 ],
                 techStack: [
-                  "HTML", 
+                  "HTML",
                   "CSS",
                   "JavaScript",
                   "React",
@@ -113,22 +110,32 @@ export const translations = {
       projects: [
         {
           title: "Resume",
-          description: "Designed and developed a modern portfolio to present my work and experience.",
+          description:
+            "Designed and developed a modern portfolio to present my work and experience.",
           techStack: ["HTML", "CSS", "JavaScript", "React"],
           date: "2025",
-          resourceUrl:"/assets/resume.png",
-          resourceType:  "image"    
+          resourceUrl: "/assets/resume.png",
+          resourceType: "image",
         },
         {
           title: "UVDOMJugde",
-          description: "Web platform for automatic evaluation of programming students using virtual judges and Docker-based isolated environments.",
-          techStack: ["HTML", "CSS", "JavaScript", "Python/Django", "Docker", "RabbitMQ", "DOMJudge"],
+          description: `<p>Web platform for automatic evaluation of programming students using virtual judges and Docker-based isolated environments. You can check the repositories in the next links: 
+          <a class="link-project" href="https://github.com/macripcode/api-uvdomjudge" target="_blank" rel="noopener noreferrer"> API UVDomJudge </a> , <a class="link-project" href="https://github.com/macripcode/containers-uvdomjudge" target="_blank" rel="noopener noreferrer"> Containers UVDomJudge</a>, <a class="link-project" href="https://github.com/macripcode/app-uvdomjudge" target="_blank" rel="noopener noreferrer"> App UVDomJudge</a></p> `,
+          techStack: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python/Django",
+            "Docker",
+            "RabbitMQ",
+            "DOMJudge",
+          ],
           date: "2019",
           resourceUrl: "https://www.youtube.com/embed/8gwlrHjYmvI",
-          resourceType: "youtube" 
-        }
-      ]
-    }
+          resourceType: "youtube",
+        },
+      ],
+    },
   },
   es: {
     Header: {
@@ -145,7 +152,7 @@ export const translations = {
       ContactMe: `Contactame`,
       Experience: {
         etitle: `Experiencia Profesional y Educación`,
-        viewMore:`Mostrar más`,
+        viewMore: `Mostrar más`,
         viewLess: `Mostrar menos`,
         careerPath: [
           {
@@ -241,21 +248,31 @@ export const translations = {
       projects: [
         {
           title: "Resume",
-          description: "Diseñé y desarrollé un portafolio moderno para presentar mi trabajo y experiencia.",
+          description:
+            "Diseñé y desarrollé un portafolio moderno para presentar mi trabajo y experiencia.",
           techStack: ["HTML", "CSS", "JavaScript", "React"],
           date: "2025",
-          resourceUrl:"/assets/resume.png",
-          resourceType:  "image"        
+          resourceUrl: "/assets/resume.png",
+          resourceType: "image",
         },
         {
           title: "UVDOMJugde",
-          description: "Plataforma web para evaluación automática de estudiantes de programación, usando jueces virtuales y entornos aislados con Docker.",
-          techStack: ["HTML", "CSS", "JavaScript", "Python/Django", "Docker", "RabbitMQ", "DOMJudge"],
+          description:
+            `Plataforma web para evaluación automática de estudiantes de programación, usando jueces virtuales y entornos aislados con Docker. Puedes acceder a los repositorios en los siguientes links : <a class="link-project" href="https://github.com/macripcode/api-uvdomjudge" target="_blank" rel="noopener noreferrer"> API UVDomJudge </a> , <a class="link-project" href="https://github.com/macripcode/containers-uvdomjudge" target="_blank" rel="noopener noreferrer"> Containers UVDomJudge</a>, <a class="link-project" href="https://github.com/macripcode/app-uvdomjudge" target="_blank" rel="noopener noreferrer"> App UVDomJudge</a></p>`,
+          techStack: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Python/Django",
+            "Docker",
+            "RabbitMQ",
+            "DOMJudge",
+          ],
           date: "2019",
           resourceUrl: "https://www.youtube.com/embed/8gwlrHjYmvI",
-          resourceType: "youtube"          
-        }
-      ]
-    }
+          resourceType: "youtube",
+        },
+      ],
+    },
   },
 };
