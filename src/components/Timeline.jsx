@@ -58,7 +58,7 @@ function Timeline() {
                   color: timelineColor,
                 }}
                 contentArrowStyle={{
-                  borderRight: "7px solid  ´${timelineBgIcon}´",
+                  borderRight: `7px solid  ${timelineBgIcon}`,
                 }}
                 date={date}
                 iconStyle={{

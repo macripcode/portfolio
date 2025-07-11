@@ -26,9 +26,10 @@ body.dark {
   --subtitle: var(--gray-100);
   --text: var(--gray-100);
   --line: var(--gray-500);
-  --hero-timeline-bg: var(--gray-600);
-  --hero-timeline-color: var(--gray-100);
-  --hero-timeline-bgIcon: var(--gray-800);
+  --hero-timeline-bg: var(--gray-100);
+  --hero-timeline-color: var(--gray-900);
+  --hero-timeline-bgIcon: var(--gray-100);
+  --hero-timeline-colorShowMore: var(--gray-800);
 }
 
 body.light {
@@ -38,7 +39,8 @@ body.light {
   --subtitle: var(--gray-900);
   --text: var(--gray-800);
   --line: var(--gray-800);
-  --hero-timeline-bg: var(--gray-100);
-  --hero-timeline-color: var(--gray-600);
-  --hero-timeline-bgIcon: var(--gray-800);
+  --hero-timeline-bg: var(--gray-400);
+  --hero-timeline-color: var(--gray-900);
+  --hero-timeline-bgIcon: var(--gray-400);
+  --hero-timeline-colorShowMore: var(--gray-700);
 }

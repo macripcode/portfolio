@@ -1,14 +1,28 @@
 // components/Project.jsx
-import { useState } from "react";
+import { useState, useContext } from "react";
 
+import { useCSSVariables } from "../hooks/useCSSVariables";
+
+import { ThemeContext } from "../context/ThemeContext";
 import { useTranslation } from "../context/TranslationContext";
 
 function Project({ title, description, techStack }) {
+  
   const [expanded, setExpanded] = useState(false);
+
+  const { theme } = useContext(ThemeContext);
 
   const translation = useTranslation();
   const viewMore = translation.Hero.Experience.viewMore;
   const viewLess = translation.Hero.Experience.viewLess;
+
+  const {
+    "--hero-timeline-colorShowMore": colorShowMore  
+  } = useCSSVariables(
+    ["--hero-timeline-colorShowMore"],
+    "body",
+    [theme]
+  );
 
   return (
     <div className="project">
@@ -19,7 +33,7 @@ function Project({ title, description, techStack }) {
         style={{
           background: "none",
           border: "none",
-          color: "#007bff",
+          color: `${colorShowMore}`,
           cursor: "pointer",
           fontWeight: "bold",
           marginBottom: "0.5rem",
