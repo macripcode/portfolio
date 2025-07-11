@@ -29,7 +29,9 @@ body.dark {
   --hero-timeline-bg: var(--gray-100);
   --hero-timeline-color: var(--gray-900);
   --hero-timeline-bgIcon: var(--gray-100);
-  --hero-timeline-colorShowMore: var(--gray-800);
+  --hero-timeline-colorShowMore: var(--gray-900);
+  --work-content-background: var(--gray-400);
+  --work-content-color: var(--gray-900);
 }
 
 body.light {
@@ -42,5 +44,7 @@ body.light {
   --hero-timeline-bg: var(--gray-400);
   --hero-timeline-color: var(--gray-900);
   --hero-timeline-bgIcon: var(--gray-400);
-  --hero-timeline-colorShowMore: var(--gray-700);
+  --hero-timeline-colorShowMore: var(--gray-900);
+  --work-content-background: var(--gray-600);
+  --work-content-color: var(--gray-900);
 }

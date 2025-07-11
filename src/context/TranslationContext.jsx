@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { translations } from "../components/translations"; // ajusta el path si es necesario
+import { translations } from "../data/translations"; // ajusta el path si es necesario
 import { LanguageContext } from "./LanguageContext";
 
 export const TranslationContext = createContext();

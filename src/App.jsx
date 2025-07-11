@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Projects from "./components/Projects";
+import Work from "./components/Work";
 import Contact from "./components/Contact";
 
 import { useContext, useState, useEffect } from "react";
@@ -20,8 +20,8 @@ function App() {
     <main>
       <Header/>
        <Hero/>
-      {/* <Projects />
-      <Contact /> */}
+      <Work />
+      <Contact /> 
     </main>
   );
 }

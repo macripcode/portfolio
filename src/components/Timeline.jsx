@@ -42,12 +42,11 @@ function Timeline() {
       <div className="title-div">
         <h2>{etitle}</h2>
       </div>
-      
 
       <div className="timeline-div">
         <VerticalTimeline>
           {careerPath.map((item, index) => {
-            const { type, date, rol, description, location, projects } = item;
+            const { type, date, rol, location, projects } = item;
 
             return (
               <VerticalTimelineElement
@@ -67,9 +66,7 @@ function Timeline() {
                 }}
                 icon={type === "job" ? <WorkIcon /> : <SchoolIcon />}
               >
-                <h3 className="vertical-timeline-element-title">
-                  {description}
-                </h3>
+                <h3 className="vertical-timeline-element-title">{rol}</h3>
                 <h4 className="vertical-timeline-element-subtitle">
                   {location}
                 </h4>
@@ -79,7 +76,7 @@ function Timeline() {
                     return (
                       <Project
                         key={index}
-                        title={project.title}                       
+                        title={project.title}
                         description={project.description}
                         techStack={project.techStack}
                       />

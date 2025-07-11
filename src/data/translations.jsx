@@ -108,6 +108,27 @@ export const translations = {
         ],
       },
     },
+    Work: {
+      title: "Projects",
+      projects: [
+        {
+          title: "Resume",
+          description: "Designed and developed a modern portfolio to present my work and experience.",
+          techStack: ["HTML", "CSS", "JavaScript", "React"],
+          date: "2025",
+          resourceUrl:"/assets/resume.png",
+          resourceType:  "image"    
+        },
+        {
+          title: "UVDOMJugde",
+          description: "Web platform for automatic evaluation of programming students using virtual judges and Docker-based isolated environments.",
+          techStack: ["HTML", "CSS", "JavaScript", "Python/Django", "Docker", "RabbitMQ", "DOMJudge"],
+          date: "2019",
+          resourceUrl: "https://www.youtube.com/embed/8gwlrHjYmvI",
+          resourceType: "youtube" 
+        }
+      ]
+    }
   },
   es: {
     Header: {
@@ -130,7 +151,7 @@ export const translations = {
           {
             type: "job",
             date: "Junio 2020 – Enero 2025",
-            rol: "Ingeniera de Software en Spectrio",
+            rol: "Desarrollador Full Stack en Spectrio",
             location: "Remoto",
             projects: [
               {
@@ -176,7 +197,7 @@ export const translations = {
           {
             type: "job",
             date: "Julio 2018 – Junio 2020",
-            rol: "Ingeniera de Software en Clientify",
+            rol: "Desarrollador en Clientify",
             location: "Remoto",
             projects: [
               {
@@ -215,5 +236,26 @@ export const translations = {
         ],
       },
     },
+    Work: {
+      title: "Proyectos",
+      projects: [
+        {
+          title: "Resume",
+          description: "Diseñé y desarrollé un portafolio moderno para presentar mi trabajo y experiencia.",
+          techStack: ["HTML", "CSS", "JavaScript", "React"],
+          date: "2025",
+          resourceUrl:"/assets/resume.png",
+          resourceType:  "image"        
+        },
+        {
+          title: "UVDOMJugde",
+          description: "Plataforma web para evaluación automática de estudiantes de programación, usando jueces virtuales y entornos aislados con Docker.",
+          techStack: ["HTML", "CSS", "JavaScript", "Python/Django", "Docker", "RabbitMQ", "DOMJudge"],
+          date: "2019",
+          resourceUrl: "https://www.youtube.com/embed/8gwlrHjYmvI",
+          resourceType: "youtube"          
+        }
+      ]
+    }
   },
 };
