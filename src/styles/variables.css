@@ -1,21 +1,24 @@
-:root{
-  --white:     #ffffff;
-  --black:     #000000;
-  --gray-50:   #f9f9f9;
-  --gray-100:  #f0f0f0;
-  --gray-200:  #e0e0e0;
-  --gray-300:  #cfcfcf;
-  --gray-400:  #b0b0b0;
-  --gray-500:  #999999;
-  --gray-600:  #777777;
-  --gray-700:  #555555;
-  --gray-800:  #3e3e3e;
-  --gray-900:  #121212;
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray-50: #f9f9f9;
+  --gray-100: #f0f0f0;
+  --gray-200: #e0e0e0;
+  --gray-300: #cfcfcf;
+  --gray-400: #b0b0b0;
+  --gray-500: #999999;
+  --gray-600: #777777;
+  --gray-700: #555555;
+  --gray-800: #3e3e3e;
+  --gray-900: #121212;
 
   --font-heading: 'Julius Sans One', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  --line:      #999999;
+  --line: #999999;
+
+  --background-logo1: #EEAECA;
+  --background-logo1-radial: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 
@@ -32,6 +35,7 @@ body.dark {
   --hero-timeline-colorShowMore: var(--gray-900);
   --work-content-background: var(--gray-400);
   --work-content-color: var(--gray-900);
+  --languages-dots-background: var(--gray-500);
 }
 
 body.light {
@@ -47,4 +51,5 @@ body.light {
   --hero-timeline-colorShowMore: var(--gray-900);
   --work-content-background: var(--gray-600);
   --work-content-color: var(--gray-900);
+  --languages-dots-background: var(--gray-500);
 }

@@ -1,3 +1,5 @@
+import { Language } from "@mui/icons-material";
+
 export const translations = {
   en: {
     Header: {
@@ -136,6 +138,21 @@ export const translations = {
         },
       ],
     },
+    Languages: {
+      title: `Languages`,
+      languages: [
+        {
+          name: "Spanish",
+          level: "Native",
+          levelNumber: 5,
+        },
+        {
+          name: "English",
+          level: "C1 (Advanced Level)",
+          levelNumber: 4,
+        },
+      ],
+    },
   },
   es: {
     Header: {
@@ -257,8 +274,7 @@ export const translations = {
         },
         {
           title: "UVDOMJugde",
-          description:
-            `Plataforma web para evaluación automática de estudiantes de programación, usando jueces virtuales y entornos aislados con Docker. Puedes acceder a los repositorios en los siguientes links : <a class="link-project" href="https://github.com/macripcode/api-uvdomjudge" target="_blank" rel="noopener noreferrer"> API UVDomJudge </a> , <a class="link-project" href="https://github.com/macripcode/containers-uvdomjudge" target="_blank" rel="noopener noreferrer"> Containers UVDomJudge</a>, <a class="link-project" href="https://github.com/macripcode/app-uvdomjudge" target="_blank" rel="noopener noreferrer"> App UVDomJudge</a></p>`,
+          description: `Plataforma web para evaluación automática de estudiantes de programación, usando jueces virtuales y entornos aislados con Docker. Puedes acceder a los repositorios en los siguientes links : <a class="link-project" href="https://github.com/macripcode/api-uvdomjudge" target="_blank" rel="noopener noreferrer"> API UVDomJudge </a> , <a class="link-project" href="https://github.com/macripcode/containers-uvdomjudge" target="_blank" rel="noopener noreferrer"> Containers UVDomJudge</a>, <a class="link-project" href="https://github.com/macripcode/app-uvdomjudge" target="_blank" rel="noopener noreferrer"> App UVDomJudge</a></p>`,
           techStack: [
             "HTML",
             "CSS",
@@ -271,6 +287,21 @@ export const translations = {
           date: "2019",
           resourceUrl: "https://www.youtube.com/embed/8gwlrHjYmvI",
           resourceType: "youtube",
+        },
+      ],
+    },
+    Languages: {
+      title: `Idioma`,
+      languages: [
+        {
+          name: "Español",
+          level: "Nativo",
+          levelNumber: 5,
+        },
+        {
+          name: "Inglés",
+          level: "C1 (Advanzado)",
+          levelNumber: 4,
         },
       ],
     },

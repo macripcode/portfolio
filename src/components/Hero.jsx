@@ -5,6 +5,7 @@ import { LanguageContext } from "../context/LanguageContext";
 import { useTranslation } from "../context/TranslationContext";
 
 import Timeline from "./Timeline";
+import DotsProgress from "./DotsProgress/DotsProgress";
 
 import "../styles/hero.css";
 
@@ -45,7 +46,7 @@ function Hero() {
             <a href="/files/cristina-portilla.pdf" download>
               <span>{downloadMyCv}</span>
             </a>
-            <a href="#contact">
+            <a href="mailto:macripco1311@gmail.com">
               <span>{contactMe}</span>
             </a>
           </div>

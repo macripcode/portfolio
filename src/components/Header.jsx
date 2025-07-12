@@ -46,7 +46,9 @@ function Header() {
 
   return (
     <header className="header" style={{ backgroundColor: bgColor }}>
-      <div className="div-logo" style={{ backgroundColor: bgLogoColor }}></div>
+    <div className="div-logo-wrapper">
+  <img src="/logo-pattern.png" alt="logo" className="logo-img" />
+</div>
 
       <div>
         <nav>
