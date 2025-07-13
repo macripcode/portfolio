@@ -1,0 +1,90 @@
+.div-links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links {
+    margin: 0 1rem;
+    color: var(--subtitle);
+    font-size: 20px;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--subtitle);
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+}
+
+@media(min-width: 320px) and (max-width: 480px) {
+
+    .div-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .div-links-a-div {
+        margin: 30px 0px 30px 0px;
+    }
+}
+
+@media (min-width: 480px) {
+    .div-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .div-links-a-div {
+        margin: 30px 0px 30px 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .div-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .div-links-a-div {
+        margin: 30px 0px 30px 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .div-links {
+        width: 60%;
+    }
+
+    .div-links-a-div{
+        display: contents;
+    }
+
+    
+}
+
+@media (min-width: 1280px) {
+    .div-links {
+        width: 50%;
+    }
+
+    .div-links-a-div{
+        display: contents;
+    }
+}

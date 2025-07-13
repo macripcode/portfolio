@@ -8,15 +8,17 @@
     align-items: center;
 }
 
+.theme-btn:hover {
+    background-color: #f4b400;
+    color: #000;
+  }
+
 .bottom-bar {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid var(--line);
 }
-
-/* div-settings-languages
-  div-settings-theme*/
 
 @media(min-width: 320px) and (max-width: 480px) {
 

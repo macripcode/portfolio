@@ -2,12 +2,13 @@ import React, { useState, useContext } from "react";
 
 import Select from "react-select";
 
-import { useCSSVariables } from "../hooks/useCSSVariables";
+import { useCSSVariables } from "../../hooks/useCSSVariables";
 
-import { ThemeContext } from "../context/ThemeContext";
-import { LanguageContext } from "../context/LanguageContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
 
-import "../styles/settings.css";
+import "../../styles/header/settings.css";
+
 
 function Settings() {
   const { theme, setTheme } = useContext(ThemeContext);

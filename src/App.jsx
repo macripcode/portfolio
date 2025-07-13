@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
 import Languages from "./components/Languages";
