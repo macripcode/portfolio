@@ -1,19 +1,45 @@
 /* src/styles/header.css */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
+  display: block;
   z-index: 1000;
   background-color: #000000;
   color: var(--text);
   border-bottom: 1px solid #2a2a2a;
+  height: 100px;
+}
 
-  /* 💥 Elimina los márgenes y límites */
-  max-width: 100%;
-  margin: 0;
+.desktop-navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.div-logo {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-links {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.div-settings {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-items: center;
 }
 
 
@@ -26,24 +52,11 @@
   margin-left: 1rem;
 }
 
-.div-logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-image: url('/logo-pattern.png'); 
-  background-size: cover;
-  background-position: center;
-  border: 1px solid var(--line);
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
 
 .div-logo-wrapper {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-
   background: #8a9bf2;
   background: radial-gradient(circle, white, #88c2db, #f440c4);
   display: flex;
@@ -86,15 +99,73 @@ nav a:hover::after {
 }
 
 
-.div-settings {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-}
-
 .theme-btn:hover {
   background-color: #f4b400;
   color: #000;
+}
+
+/* --Side bar Mobile */
+.mobile-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80px;
+  /* puedes ajustar según prefieras */
+  height: 100vh;
+  background-color: var(--background-logo);
+  /* o el color que uses */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text); /* O ajusta según tu tema */
+}
+
+@media(min-width: 320px) and (max-width: 480px) {
+  .desktop-navbar{
+    display: none;
+  }
+  .mobile-sidebar {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* md — Tablet (768px - 1023px) */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* lg — Small laptop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+/* xl — Desktop */
+@media (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
 }

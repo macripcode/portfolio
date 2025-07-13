@@ -5,13 +5,10 @@ import { LanguageContext } from "../context/LanguageContext";
 import { useTranslation } from "../context/TranslationContext";
 
 import Timeline from "./Timeline";
-import DotsProgress from "./DotsProgress/DotsProgress";
 
 import "../styles/hero.css";
 
 function Hero() {
-  const { theme } = useContext(ThemeContext);
-  const { lang } = useContext(LanguageContext);
 
   const translation = useTranslation();
   const hero = translation.Hero;
