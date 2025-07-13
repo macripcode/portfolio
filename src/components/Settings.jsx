@@ -7,6 +7,8 @@ import { useCSSVariables } from "../hooks/useCSSVariables";
 import { ThemeContext } from "../context/ThemeContext";
 import { LanguageContext } from "../context/LanguageContext";
 
+import "../styles/settings.css";
+
 function Settings() {
   const { theme, setTheme } = useContext(ThemeContext);
   const { lang, setLang } = useContext(LanguageContext);
@@ -39,7 +41,7 @@ function Settings() {
 
   return (
     <div className="div-settings">
-      <div>
+      <div className="div-settings-languages">
         <Select
           options={options}
           value={options.find((opt) => opt.value === lang)}
@@ -84,7 +86,7 @@ function Settings() {
         />
       </div>
 
-      <div>
+      <div className="div-settings-theme">
         <button
           className="theme-btn"
           onClick={toggleTheme}
