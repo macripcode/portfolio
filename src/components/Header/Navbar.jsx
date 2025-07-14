@@ -2,7 +2,7 @@ import { useTranslation } from "../../context/TranslationContext";
 
 import "../../styles/header/navbar.css";
 
-function Navbar() {
+function Navbar({onClose}) {
   const translation = useTranslation();
 
   const header = translation.header;
@@ -20,6 +20,7 @@ function Navbar() {
                 href={hrefs[index]}
                 style={{ margin: "0 1rem" }}
                 className="nav-links"
+                onClick={onClose}
               >
                 {label}
               </a>
