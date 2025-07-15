@@ -43,7 +43,7 @@ function Header() {
       </div>
 
       {showSidebar && (
-        <aside className={`mobile-sidebar ${isClosing ? "closing" : ""}`}>
+        <aside className={`mobile-sidebar ${isClosing ? "closing" : "active"}`}>
           <button className="close-button" onClick={handleCloseSidebar}>
             ✖️
           </button>

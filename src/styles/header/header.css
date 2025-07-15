@@ -16,8 +16,12 @@
   justify-content: space-between;
 }
 
+.mobile-sidebar{
+  display: none;
+}
 
-.mobile-sidebar {
+.mobile-sidebar.active {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0; 

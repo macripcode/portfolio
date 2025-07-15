@@ -53,3 +53,33 @@ body.light {
   --work-content-color: var(--gray-900);
   --languages-dots-background: var(--gray-500);
 }
+
+body.galaxy {
+  --light-pink: #f3e8f5;
+  --medium-pink: #ef5dac;
+
+  --light-tail: #1396b3;
+  --dark-tail: #05424d;
+
+  --light-purple: #b6a9e7;
+  --medium-purple: #6b56b8; 
+  --dark-purple: #38238d;
+
+  --medium-blue: #073666;
+  --dark-blue: #1e0a4a;
+
+  --o1: #141E41;
+  --o2: #4d0169;
+  --o3: #296cb9; 
+  --o4: #27a5d3;
+  --o5: #c478b9;
+
+  --traslucent1: #e1ecf0 ;
+  --traslucent2:  #b9dce3;
+  --traslucent3: #c5cfe8 ;
+  --traslucent4:  #ecd3d1;
+  --traslucent5: #d0e7c9 ;
+  --traslucent5: #024654 ;
+  --traslucent11: #022a38 ;
+
+}
