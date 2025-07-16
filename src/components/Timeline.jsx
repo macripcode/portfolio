@@ -23,8 +23,8 @@ function Timeline() {
   const { lang } = useContext(LanguageContext);
 
   const translation = useTranslation();
-  const experience = translation.Hero.Experience;
-  const etitle = experience.etitle;
+  const experience = translation.experience;
+  const title = experience.title;
   const careerPath = experience.careerPath;
 
   const {
@@ -40,7 +40,7 @@ function Timeline() {
   return (
     <div className="hero-experience-div">
       <div className="title-div">
-        <h2>{etitle}</h2>
+        <h2>{title}</h2>
       </div>
 
       <div className="timeline-div">
@@ -76,9 +76,9 @@ function Timeline() {
                     return (
                       <Project
                         key={index}
-                        title={project.title}
-                        description={project.description}
-                        techStack={project.techStack}
+                        title={title}
+                        description={description}
+                        techStack={techStack}
                       />
                     );
                   })}

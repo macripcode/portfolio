@@ -52,3 +52,13 @@
 .dots-progress-dot.dots-progress-dot-active {
     background: var(--languages-dots-background);
 }
+
+@media(min-width: 320px) and (max-width: 480px) {}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}

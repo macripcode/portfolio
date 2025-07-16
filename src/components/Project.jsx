@@ -13,8 +13,8 @@ function Project({ title, description, techStack }) {
   const { theme } = useContext(ThemeContext);
 
   const translation = useTranslation();
-  const viewMore = translation.Hero.Experience.viewMore;
-  const viewLess = translation.Hero.Experience.viewLess;
+  const viewMore = translation.experience.viewMore;
+  const viewLess = translation.experience.viewLess;
 
   const {
     "--hero-timeline-colorShowMore": colorShowMore  

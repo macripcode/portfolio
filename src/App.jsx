@@ -18,9 +18,9 @@ function App() {
 
   return (
     <main>
-      <Header/>
-       {/* <Hero/>
-      <Work />
+      <Header />
+      <Hero />
+      {/* <Work />
       <Languages /> */}
     </main>
   );
