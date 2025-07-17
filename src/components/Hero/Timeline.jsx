@@ -40,7 +40,7 @@ function Timeline() {
   );
 
   return (
-    <div className="hero-experience-div">
+    <div id="experience" className="hero-experience-div">
       <div className="title-div">
         <h2>{title}</h2>
       </div>

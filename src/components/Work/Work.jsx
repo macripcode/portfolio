@@ -22,7 +22,7 @@ function Work() {
   const projects = work.projects;
 
   return (
-    <div className="work-slider-div">
+    <div id="projects" className="work-slider-div">
       <h2 className="work-title">{title}</h2>
 
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
