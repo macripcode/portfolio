@@ -292,7 +292,7 @@ export const translations = {
     },
     languages: {
       title: `Idioma`,
-      languages: [
+      items: [
         {
           name: "Español",
           level: "Nativo",
@@ -300,7 +300,7 @@ export const translations = {
         },
         {
           name: "Inglés",
-          level: "C1 (Advanzado)",
+          level: "C1 (Avanzado)",
           levelNumber: 4,
         },
       ],
