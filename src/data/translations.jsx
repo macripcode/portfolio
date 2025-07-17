@@ -140,7 +140,7 @@ export const translations = {
     },
     languages: {
       title: `Languages`,
-      languages: [
+      items: [
         {
           name: "Spanish",
           level: "Native",

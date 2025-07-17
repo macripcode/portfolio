@@ -13,9 +13,11 @@ function Languages() {
   const { lang } = useContext(LanguageContext);
 
   const translation = useTranslation();
-  const languages = translation.Languages;
+  const languages = translation.languages;
 
-  const languagesArray = languages.languages;
+  const title = languages.title
+
+  const items = languages.items;
 
   return (
     <section id="languages">
@@ -25,7 +27,7 @@ function Languages() {
         </div>
 
         <div className="languages-content">
-          {languagesArray.map((language, index) => (
+          {items.map((language, index) => (
             <div className="language-content" key={language.name}>
               <div className="language-desc-div">
                 <span className="language-title">{language.name}</span>

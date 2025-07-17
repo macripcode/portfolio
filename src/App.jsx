@@ -21,7 +21,7 @@ function App() {
       <Header />
       <Hero />
       <Work />
-      {/* <Languages /> */}
+      <Languages />
     </main>
   );
 }
