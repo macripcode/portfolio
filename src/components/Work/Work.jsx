@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "../../styles/Work/work.css";
+import "../../styles/work/work.css";
 
 function Work() {
   const { lang } = useContext(LanguageContext);
