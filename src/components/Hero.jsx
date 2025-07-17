@@ -6,7 +6,7 @@ import { useTranslation } from "../context/TranslationContext";
 
 import Timeline from "./Timeline";
 
-import "../styles/hero.css";
+import "../styles/hero/hero.css";
 
 function Hero() {
   const translation = useTranslation();
@@ -42,7 +42,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* <Timeline></Timeline> */}
+      <Timeline></Timeline>
     </section>
   );
 }

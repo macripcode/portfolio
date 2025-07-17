@@ -18,6 +18,8 @@ import Project from "./Project";
 
 import "react-vertical-timeline-component/style.min.css";
 
+import "../styles/hero/timeline.css"
+
 function Timeline() {
   const { theme } = useContext(ThemeContext);
   const { lang } = useContext(LanguageContext);

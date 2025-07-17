@@ -7,9 +7,14 @@
 
  }
 
- .hero-experience-div .title-div {
+ .hero-experience-div>.title-div {
      display: flex;
      justify-content: center;
+     align-items: center;
+ }
+
+ .hero-experience-div>.title-div>h2 {
+     text-align: center;
  }
 
  .vertical-timeline-element-title {
@@ -29,12 +34,28 @@
      font-family: var(--font-heading);
  }
 
- @media(min-width: 320px) and (max-width: 480px) {}
+ @media(min-width: 320px) and (max-width: 480px) {
+    .hero-experience-div {
+        width: 100%;
+    }
+ }
 
- @media (min-width: 480px) {}
+ @media (min-width: 480px) {
+     .hero-experience-div {
+         width: 100%;
+     }
+ }
 
- @media (min-width: 768px) {}
+ @media (min-width: 768px) {
+     .hero-experience-div {
+         width: 100%;
+     }
+ }
 
- @media (min-width: 1024px) {}
+ @media (min-width: 1024px) {
+    .hero-experience-div {
+        width: 100%;
+    }
+ }
 
  @media (min-width: 1280px) {}
