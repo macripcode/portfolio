@@ -1,12 +1,12 @@
 import { useContext } from "react";
 
-import { ThemeContext } from "../context/ThemeContext";
-import { LanguageContext } from "../context/LanguageContext";
-import { useTranslation } from "../context/TranslationContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+import { useTranslation } from "../../context/TranslationContext";
 
 import Timeline from "./Timeline";
 
-import "../styles/hero/hero.css";
+import "../../styles/hero/hero.css";
 
 function Hero() {
   const translation = useTranslation();

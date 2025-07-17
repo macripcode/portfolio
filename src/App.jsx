@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero";
-import Work from "./components/Work";
-import Languages from "./components/Languages";
+import Hero from "./components/Hero/Hero";
+import Work from "./components/Work/Work";
+import Languages from "./components/Languages/Languages";
 
 import { useContext, useState, useEffect } from "react";
 
@@ -20,8 +20,8 @@ function App() {
     <main>
       <Header />
       <Hero />
-      {/* <Work />
-      <Languages /> */}
+      <Work />
+      {/* <Languages /> */}
     </main>
   );
 }

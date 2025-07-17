@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import "../styles/work.css";
+import "../styles/Work/work.css";
 
 function ProjectCard({project}) {
 

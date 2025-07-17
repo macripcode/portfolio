@@ -3,27 +3,27 @@ import React, { useRef, useState, useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-import { ThemeContext } from "../context/ThemeContext";
-import { LanguageContext } from "../context/LanguageContext";
-import { useTranslation } from "../context/TranslationContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+import { useTranslation } from "../../context/TranslationContext";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "../styles/work.css";
+import "../../styles/Work/work.css";
 
 function Work() {
   const { lang } = useContext(LanguageContext);
   const translation = useTranslation();
 
-  const work = translation.Work;
+  const work = translation.work;
   const title = work.title;
   const projects = work.projects;
 
   return (
     <div className="work-slider-div">
-      <h1 className="work-title">{title}</h1>
+      <h2 className="work-title">{title}</h2>
 
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         {projects.map((project, index) => {

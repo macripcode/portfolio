@@ -1,10 +1,10 @@
 // components/Project.jsx
 import { useState, useContext } from "react";
 
-import { useCSSVariables } from "../hooks/useCSSVariables";
+import { useCSSVariables } from "../../hooks/useCSSVariables";
 
-import { ThemeContext } from "../context/ThemeContext";
-import { useTranslation } from "../context/TranslationContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { useTranslation } from "../../context/TranslationContext";
 
 function Project({ title, description, techStack }) {
   

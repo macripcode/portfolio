@@ -1,12 +1,12 @@
 import { useContext } from "react";
 
-import { ThemeContext } from "../context/ThemeContext";
-import { LanguageContext } from "../context/LanguageContext";
-import { useTranslation } from "../context/TranslationContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+import { useTranslation } from "../../context/TranslationContext";
 
-import DotsProgress from "./DotsProgress/DotsProgress";
+import DotsProgress from "../DotsProgress/DotsProgress";
 
-import "../styles/languages.css";
+import "../../styles/languages/languages.css";
 
 function Languages() {
   const { theme } = useContext(ThemeContext);
@@ -15,7 +15,6 @@ function Languages() {
   const translation = useTranslation();
   const languages = translation.Languages;
 
-  const title = languages.title;
   const languagesArray = languages.languages;
 
   return (

@@ -8,17 +8,17 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import { useCSSVariables } from "../hooks/useCSSVariables";
+import { useCSSVariables } from "../../hooks/useCSSVariables";
 
-import { ThemeContext } from "../context/ThemeContext";
-import { LanguageContext } from "../context/LanguageContext";
-import { useTranslation } from "../context/TranslationContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+import { useTranslation } from "../../context/TranslationContext";
 
-import Project from "./Project";
+import Project from "../Hero/Project";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import "../styles/hero/timeline.css"
+import "../../styles/hero/timeline.css"
 
 function Timeline() {
   const { theme } = useContext(ThemeContext);
