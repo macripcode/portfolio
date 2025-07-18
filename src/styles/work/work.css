@@ -44,7 +44,7 @@
 /* Swiper Styles */
 
 .swiper-div{
-  height: 500px;
+  height: 700px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -103,6 +103,10 @@
 @media(min-width: 320px) and (max-width: 480px) {
   .work-slider-div{
     width: 100%;
+  }
+
+  .swiper-div{
+    height: 1000px;
   }
 }
 
