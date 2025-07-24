@@ -112,15 +112,14 @@ export const translations = {
       projects: [
         {
           title: "Resume",
-          description:
-            "Designed and developed a modern portfolio to present my work and experience.",
-          techStack: ["HTML", "CSS", "JavaScript", "React"],
+          description: `Designed and developed a modern portfolio to present my work and experience.`,
           links: [
             {
               text: "Repository ",
               url: "https://github.com/macripcode/portfolio",
             },
           ],
+          techStack: ["HTML", "CSS", "JavaScript", "React"],
           date: "2025",
           resourceUrl: "/assets/resume.png",
           resourceType: "image",
@@ -290,6 +289,12 @@ export const translations = {
           title: "Resume",
           description:
             "Diseñé y desarrollé un portafolio moderno para presentar mi trabajo y experiencia.",
+          links: [
+            {
+              text: "Repository ",
+              url: "https://github.com/macripcode/portfolio",
+            },
+          ],
           techStack: ["HTML", "CSS", "JavaScript", "React"],
           date: "2025",
           resourceUrl: "/assets/resume.png",
@@ -297,7 +302,25 @@ export const translations = {
         },
         {
           title: "UVDOMJugde",
-          description: `Plataforma web para evaluación automática de estudiantes de programación, usando jueces virtuales y entornos aislados con Docker. Puedes acceder a los repositorios en los siguientes links : <a class="link-project" href="https://github.com/macripcode/api-uvdomjudge" target="_blank" rel="noopener noreferrer"> API UVDomJudge </a> , <a class="link-project" href="https://github.com/macripcode/containers-uvdomjudge" target="_blank" rel="noopener noreferrer"> Containers UVDomJudge</a>, <a class="link-project" href="https://github.com/macripcode/app-uvdomjudge" target="_blank" rel="noopener noreferrer"> App UVDomJudge</a></p>`,
+          description: `Plataforma web para evaluación automática de estudiantes de programación, usando jueces virtuales y entornos aislados con Docker. `,
+          links: [
+            {
+              text: "API UVDomJudge",
+              url: "https://github.com/macripcode/api-uvdomjudge",
+            },
+            {
+              text: "Containers UVDomJudge",
+              url: "https://github.com/macripcode/containers-uvdomjudge",
+            },
+            {
+              text: "App UVDomJudge",
+              url: "https://github.com/macripcode/app-uvdomjudge",
+            },
+            {
+              text: "Video Explicación",
+              url: "https://www.youtube.com/embed/8gwlrHjYmvI",
+            },
+          ],
           techStack: [
             "HTML",
             "CSS",
