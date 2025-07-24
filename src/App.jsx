@@ -23,7 +23,7 @@ function App() {
       <Hero />
       <Experience />
       <Work />
-      {/* <Languages /> */}
+      <Languages />
     </main>
   );
 }
