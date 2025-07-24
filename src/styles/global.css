@@ -50,7 +50,7 @@ a {
   text-align: center;
 }
 
-@media(min-width: 320px) and (max-width: 480px) {
+@media(min-width: 320px) and (max-width: 479px){
   .container-section {
     width: 100%;
   }

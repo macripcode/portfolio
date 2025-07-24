@@ -6,7 +6,7 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
   width: 100%;
@@ -16,34 +16,16 @@
 
 
 
-@media(min-width: 320px) and (max-width: 480px) {
-  .work-slider-div {
-    width: 100%;
-  }
-
-  .swiper-div {
-    height: 1000px;
+@media(min-width: 320px) and (max-width: 479px) {
+  .project-grid {
+    padding: 0px;
   }
 }
 
-@media (min-width: 480px) {
-  .work-slider-div {
-    width: 100%;
-  }
+@media (min-width: 480px) {}
 
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 768px) {
-  .work-slider-div {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .work-slider-div {
-    width: 100%;
-  }
-
-}
+@media (min-width: 1024px) {}
 
 @media (min-width: 1280px) {}
