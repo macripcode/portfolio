@@ -1,21 +1,18 @@
 .languages-div {
-
-    width: 50%;
-    height: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px auto 10px auto;
-
+    align-items: center;
 }
 
-.languages-content{
+.languages-content {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .language-content {
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-direction: row;
     text-align: left;
@@ -23,7 +20,7 @@
     margin-bottom: 10px;
 }
 
-.language-title{
+.language-title {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -40,25 +37,18 @@
     text-align: left;
 }
 
-.language-dots-div, .language-desc-div{
+.language-dots-div,
+.language-desc-div {
     width: 50%;
 }
 
 .dots-progress-dot.dots-progress-dot-active {
-    background: var(--languages-dots-background);
+    background: blue;
 }
 
-@media(min-width: 320px) and (max-width: 480px) {
-    .languages-div {
-        width: 80%;
-    }
-}
+@media(min-width: 320px) and (max-width: 480px) {}
 
-@media (min-width: 480px) {
-    .languages-div {
-        width: 80%;
-    }
-}
+@media (min-width: 480px) {}
 
 @media (min-width: 768px) {}
 
