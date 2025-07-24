@@ -1,4 +1,3 @@
-
 .hero-description-div {
     width: 100%;
     display: grid;
@@ -86,9 +85,19 @@
     background-color: var(--subtitle);
 }
 
-@media(min-width: 320px) and (max-width: 480px) {}
+@media(min-width: 320px) and (max-width: 479px) {
+    .picture-div {
+        width: 200px;
+        height: 200px;
+    }
+}
 
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+    .picture-div {
+        width: 300px;
+        height: 300px;
+    }
+}
 
 @media (min-width: 768px) {
     .hero-description-div {

@@ -3,8 +3,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-h1, h2, h3, .title {
+h1,
+h2,
+h3,
+.title {
   font-family: 'Julius Sans One', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
@@ -29,13 +37,31 @@ a {
   text-decoration: none;
 }
 
-.container-section{
+.container-section {
   width: 60%;
   margin: 40px auto;
   display: flex;
 }
 
-.title-section{
+.title-section {
   display: flex;
   justify-content: center;
 }
+
+@media(min-width: 320px) and (max-width: 480px) {
+  .container-section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .container-section {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
