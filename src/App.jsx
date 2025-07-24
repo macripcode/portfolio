@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
 import Languages from "./components/Languages/Languages";
 
@@ -20,8 +21,9 @@ function App() {
     <main>
       <Header />
       <Hero />
+      <Experience />
       <Work />
-      <Languages />
+      {/* <Languages /> */}
     </main>
   );
 }

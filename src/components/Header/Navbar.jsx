@@ -12,7 +12,7 @@ function Navbar({onClose}) {
     <div className="div-links">
       <nav>
         {navbar.map((label, index) => {
-          const hrefs = ["#hero", "#experience", "#projects", "#languages"];
+          const hrefs = ["#hero", "#experience", "#work", "#languages"];
           return (
             <div key={index} className="div-links-a-div">
               <a

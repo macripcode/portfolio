@@ -1,135 +1,49 @@
-.work-slider-div {
-    width: 50%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    margin: 50px auto 50px auto;
-}
-
-.work-title{
-    text-align: center;
-    margin-bottom: 20px;
-}
-/* Swiper Styles */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Swiper Styles */
-
-.swiper-div{
-  height: 700px;
-  width: 90%;
+.work-div {
   display: flex;
   flex-direction: column;
-  color: var(--work-content-color);
-  gap: 20px;
-}
-
-.resource-div{
   width: 100%;
-  height: 300px;
 }
 
-.div-content{
-  background-color: var(--work-content-background);
-  padding: 10px;
-  text-align: left;
-  
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.title-project{
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
 
-.description-project, .techstack-project{
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-}
-
-.link-project{
-  color: var(--work-content-color);
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-.link-project a {
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.link-project a:hover {
-  text-decoration: underline;
-}
-
-.techstack-project {
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.date-project {
-  font-size: 0.85rem;
-}
 
 @media(min-width: 320px) and (max-width: 480px) {
-  .work-slider-div{
+  .work-slider-div {
     width: 100%;
   }
 
-  .swiper-div{
+  .swiper-div {
     height: 1000px;
   }
 }
 
 @media (min-width: 480px) {
-  .work-slider-div{
+  .work-slider-div {
     width: 100%;
   }
 
 }
 
 @media (min-width: 768px) {
-  .work-slider-div{
+  .work-slider-div {
     width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
-  .work-slider-div{
+  .work-slider-div {
     width: 100%;
   }
-  
+
 }
 
 @media (min-width: 1280px) {}
-
-

@@ -15,15 +15,15 @@ function Languages() {
   const translation = useTranslation();
   const languages = translation.languages;
 
-  const title = languages.title
+  const title = languages.title;
 
   const items = languages.items;
 
   return (
     <section id="languages">
       <div className="languages-div">
-        <div className="languages-title">
-          <h1> {title}</h1>
+        <div className="title-section">
+          <h2>{title}</h2>
         </div>
 
         <div className="languages-content">

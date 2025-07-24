@@ -115,14 +115,37 @@ export const translations = {
           description:
             "Designed and developed a modern portfolio to present my work and experience.",
           techStack: ["HTML", "CSS", "JavaScript", "React"],
+          links: [
+            {
+              text: "Repository ",
+              url: "https://github.com/macripcode/portfolio",
+            },
+          ],
           date: "2025",
           resourceUrl: "/assets/resume.png",
           resourceType: "image",
         },
         {
           title: "UVDOMJugde",
-          description: `<p>Web platform for automatic evaluation of programming students using virtual judges and Docker-based isolated environments. You can check the repositories in the next links: 
-          <a class="link-project" href="https://github.com/macripcode/api-uvdomjudge" target="_blank" rel="noopener noreferrer"> API UVDomJudge </a> , <a class="link-project" href="https://github.com/macripcode/containers-uvdomjudge" target="_blank" rel="noopener noreferrer"> Containers UVDomJudge</a>, <a class="link-project" href="https://github.com/macripcode/app-uvdomjudge" target="_blank" rel="noopener noreferrer"> App UVDomJudge</a></p> `,
+          description: `Web platform for automatic evaluation of programming students using virtual judges and Docker-based isolated environments.`,
+          links: [
+            {
+              text: "API UVDomJudge",
+              url: "https://github.com/macripcode/api-uvdomjudge",
+            },
+            {
+              text: "Containers UVDomJudge",
+              url: "https://github.com/macripcode/containers-uvdomjudge",
+            },
+            {
+              text: "App UVDomJudge",
+              url: "https://github.com/macripcode/app-uvdomjudge",
+            },
+            {
+              text: "Video explanation",
+              url: "https://www.youtube.com/embed/8gwlrHjYmvI",
+            },
+          ],
           techStack: [
             "HTML",
             "CSS",
@@ -133,8 +156,8 @@ export const translations = {
             "DOMJudge",
           ],
           date: "2019",
-          resourceUrl: "https://www.youtube.com/embed/8gwlrHjYmvI",
-          resourceType: "youtube",
+          resourceUrl: "/assets/uvdomjudge.jpeg",
+          resourceType: "image",
         },
       ],
     },
@@ -285,8 +308,8 @@ export const translations = {
             "DOMJudge",
           ],
           date: "2019",
-          resourceUrl: "https://www.youtube.com/embed/8gwlrHjYmvI",
-          resourceType: "youtube",
+          resourceUrl: "/assets/uvdomjudge.jpeg",
+          resourceType: "image",
         },
       ],
     },
