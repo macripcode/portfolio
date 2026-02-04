@@ -9,21 +9,19 @@ import { ThemeContext } from "../../context/ThemeContext";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Settings from "./Settings";
-import IconLogo from "./IconLogo";
 
 import "../../styles/header/header.css";
 
 function Header() {
   const { theme, setTheme } = useContext(ThemeContext);
 
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
 
-  const handleCloseSidebar = () => {
+  const handleCloseNav = () => {
     setIsClosing(true);
-
     setTimeout(() => {
-      setShowSidebar(false);
+      setShowNav(false);
       setIsClosing(false);
     }, 300);
   };
@@ -36,31 +34,24 @@ function Header() {
 
   return (
     <header className="header" style={{ backgroundColor: bgColor }}>
-      <div className="desktop-navbar">
-        <Logo></Logo>
-        <Navbar></Navbar>
-        <Settings></Settings>
+      {/* Botón de menú - solo visible en móvil */}
+      <div className="menu-toggle">
+        <Logo isClickable={true} onClick={() => setShowNav(true)} showMenuIcon={true} />
       </div>
 
-      {showSidebar && (
-        <aside className={`mobile-sidebar ${isClosing ? "closing" : "active"}`}>
-          <button className="close-button" onClick={handleCloseSidebar}>
-            ✖️
-          </button>
-          <Logo></Logo>
-          <Navbar onClose={handleCloseSidebar}></Navbar>
+      {/* Navbar única - responsive */}
+      <nav className={`nav-container ${showNav ? 'show' : ''} ${isClosing ? 'closing' : ''}`}>
+        <button className="close-button" onClick={handleCloseNav}>
+          ✖️
+        </button>
 
-          <div className="bottom-bar">
-            <Settings></Settings>
-          </div>
-        </aside>
-      )}
+        <Logo />
+        <Navbar onClose={handleCloseNav} />
 
-      {!showSidebar && (
-        <div className="menu-logo-wrapper">
-          <IconLogo isClickable={true} onClick={() => setShowSidebar(true)} />
+        <div className="settings-wrapper">
+          <Settings />
         </div>
-      )}
+      </nav>
     </header>
   );
 }

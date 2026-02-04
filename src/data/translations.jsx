@@ -3,7 +3,7 @@ import { Language } from "@mui/icons-material";
 export const translations = {
   en: {
     header: {
-      navbar: ["About Me", "Experience", "Projects", "Languages"],
+      navbar: ["About", "Experience", "Projects", "Languages"],
     },
     hero: {
       greeting: `Hello!`,
@@ -166,12 +166,12 @@ export const translations = {
         {
           name: "Spanish",
           level: "Native",
-          levelNumber: 5,
+          levelNumber: 6,
         },
         {
           name: "English",
           level: "C1 (Advanced Level)",
-          levelNumber: 8,
+          levelNumber: 5,
         },
       ],
     },
@@ -342,12 +342,12 @@ export const translations = {
         {
           name: "Español",
           level: "Nativo",
-          levelNumber: 5,
+          levelNumber: 6,
         },
         {
           name: "Inglés",
           level: "C1 (Avanzado)",
-          levelNumber: 4,
+          levelNumber: 5,
         },
       ],
     },
