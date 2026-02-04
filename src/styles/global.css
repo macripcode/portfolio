@@ -12,3 +12,11 @@
   box-shadow: 0 0 40px color-mix(in srgb, var(--accent-one) 50%, transparent);
 }
 
+.glow-text {
+  transition: text-shadow 0.3s ease;
+}
+
+.glow-text:hover {
+  text-shadow: 0 0 20px color-mix(in srgb, var(--accent-one) 85%, transparent);
+}
+
