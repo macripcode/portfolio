@@ -4,9 +4,6 @@ import Navbar from "./Navbar";
 import Settings from "./Settings";
 import "../../styles/header/header.css";
 
-/**
- * Header component with responsive navigation
- */
 function Header() {
   const [showNav, setShowNav] = useState(false);
   const [mobile, setMobile] = useState(window.innerWidth <= 1024);
@@ -16,7 +13,6 @@ function Header() {
 
     const handleResize = (e) => {
       setMobile(e.matches);
-      // Reset showNav when switching to desktop
       if (!e.matches) {
         setShowNav(false);
       }
@@ -48,5 +44,3 @@ function Header() {
 }
 
 export default Header;
-
-
