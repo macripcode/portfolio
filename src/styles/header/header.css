@@ -11,7 +11,7 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Desktop: horizontal navbar */
+/* Mobile: vertical navbar */
 @media (max-width: 1024px) {
   .header {
     display: flex;
@@ -20,5 +20,15 @@
     align-items: center;
     height: 100dvh;
     padding: 10%;
+  }
+
+  /* Collapsed state: nav hidden, show only logo */
+  .header.header-collapsed {
+    height: 20dvh;
+    padding: 2%;
+  }
+
+  .header.header-collapsed .div-logo {
+    height: 100%;
   }
 }

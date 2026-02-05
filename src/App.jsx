@@ -20,8 +20,8 @@ function App() {
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <Header />
-      {/*<Hero />
-      <Experience />
+      <Hero />
+      {/*<Experience />
       <Work />
       <Languages />*/}
     </main>

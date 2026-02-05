@@ -3,16 +3,15 @@ import { Language } from "@mui/icons-material";
 export const translations = {
   en: {
     header: {
-      navbar: ["About", "Experience", "Proyects", "Contact Me"],
+      navbar: ["About", "Experience", "Projects", "Contact Me"],
     },
     hero: {
       greeting: `Hello!`,
-      title: `About Me`,
+      title: `Hi — I'm Cristina.`,
       text: `
-        <p>I'm a consistent and disciplined frontend developer focused on building visually appealing, functional, and scalable solutions with a strong emphasis on UI/UX design.</p>
-        <p>I also have experience with backend technologies like <strong>PHP</strong> and <strong>Django</strong>, giving me a well-rounded perspective on web development.</p>
+       I’m a developer who genuinely cares about the craft. I have a pixel-perfect eye, I’m committed to doing things well, and I enjoy turning ideas into clean, intentional interfaces. I use AI as a tool to work smarter — not to replace thinking, but to amplify it — both in my workflow and in everyday life. I’m deeply autodidactic, always learning, experimenting, and refining how I build. If you want the full story — my experience, projects, and process — it’s right there in the video.
       `,
-      downloadMyCV: `Download My CV`,
+      viewProjects: `Check my Work`,
       contactMe: `Contact Me`,
     },
     experience: {
@@ -187,8 +186,8 @@ export const translations = {
         <p>Soy una desarrolladora frontend constante y disciplinada, enfocada en crear soluciones visualmente atractivas, funcionales y escalables, con una fuerte atención al diseño UI/UX.</p>
         <p>Además, cuento con experiencia previa en tecnologías backend como <strong>PHP</strong> y <strong>Django</strong>, lo que me permite tener una visión integral del desarrollo web.</p>
       `,
-      downloadMyCV: `Descarga mi CV`,
-      contactMe: `Contactame`,
+      viewProjects: `Mira mi trabajo`,
+      contactMe: `Hablemos`,
     },
     experience: {
       etitle: `Experiencia Profesional y Educación`,

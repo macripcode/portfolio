@@ -33,10 +33,15 @@ function Header() {
     setShowNav(prev => !prev);
   };
 
+  const headerClasses = [
+    'header',
+    mobile && !showNav && 'header-collapsed'
+  ].filter(Boolean).join(' ');
+
   return (
-    <header className="header">
+    <header className={headerClasses}>
        <Logo mobile={mobile} showNav={showNav} onToggleNav={toggleNav} />
-       {(!mobile || showNav) && <Navbar />}
+       {(!mobile || showNav) && <Navbar onClose={() => setShowNav(false)} />}
        {(!mobile || showNav) && <Settings />}
     </header>
   );
@@ -44,7 +49,4 @@ function Header() {
 
 export default Header;
 
-/* si mobile==true y  showNav==true entonces el logo debe mostrar una X 
-  si showNav==false y mobile==True entonces poner el div-links y div-settings con display none y el logo cuando haga hover mostrar el icono de menu
-*/
 
