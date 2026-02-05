@@ -1,8 +1,9 @@
 /* Logo container */
 .div-logo {
-  width: 100%;
-  height: 320px;
+  width: 20%;
+  height: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -42,11 +43,16 @@
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
 .div-logo-wrapper.with-menu-icon:hover .logo-flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Flip when clicked in mobile */
+.logo-flip-inner.flipped {
   transform: rotateY(180deg);
 }
 
@@ -72,16 +78,17 @@
   cursor: pointer;
 }
 
-/* Responsive breakpoints */
-@media (min-width: 1024px) {
-  .div-logo {
-    width: 10%;
-    height: 100%;
-  }
+/* Clear/Close icon */
+.clear-icon {
+  font-size: 2.5rem !important;
+  color: var(--accent-two);
+  cursor: pointer;
 }
 
-@media (min-width: 1280px) {
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
   .div-logo {
-    width: 25%;
+    height: 20%;
+    flex-direction: column;
   }
 }

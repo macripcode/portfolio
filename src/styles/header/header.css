@@ -1,101 +1,24 @@
+/* Header container */
 .header {
-  position: relative;
-  z-index: 1000;
-  color: var(--main-text);
-  border-bottom: 1px solid var(--background-second);
-  height: 100px;
-}
-
-/* Botón de menú móvil */
-.menu-toggle {
-  display: none;
-}
-
-/* Navbar única - Desktop por defecto */
-.nav-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  color: var(--main-text);
+  padding: 2%;
+  border-bottom: 1px solid var(--background-second);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-button {
-  display: none;
-}
-
-.settings-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-/* Mobile < 1024px: Navbar vertical en sidebar */
-@media (max-width: 1023px) {
+/* Desktop: horizontal navbar */
+@media (max-width: 1024px) {
   .header {
-    height: auto;
-    padding: 1rem;
-  }
-
-  /* Mostrar botón de menú */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Navbar como sidebar */
-  .nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--background);
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-    z-index: 1001;
-  }
-
-  .nav-container.show {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .nav-container.closing {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-
-  /* Mostrar botón de cerrar */
-  .close-button {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--text);
-  }
-
-  .settings-wrapper {
-    margin-top: auto;
-    padding-top: 2rem;
-    border-top: 1px solid var(--line);
-    width: 100%;
     justify-content: center;
-  }
-}
-
-/* Tablet: ancho fijo para sidebar */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .nav-container {
-    width: 400px;
+    align-items: center;
+    height: 100dvh;
+    padding: 10%;
   }
 }

@@ -1,59 +1,50 @@
-import React, { useState, useContext } from "react";
-
-import MenuIcon from "@mui/icons-material/Menu";
-
-import { useCSSVariables } from "../../hooks/useCSSVariables";
-
-import { ThemeContext } from "../../context/ThemeContext";
-
+import { useState, useEffect } from "react";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Settings from "./Settings";
-
 import "../../styles/header/header.css";
 
+/**
+ * Header component with responsive navigation
+ */
 function Header() {
-  const { theme, setTheme } = useContext(ThemeContext);
-
   const [showNav, setShowNav] = useState(false);
-  const [isClosing, setIsClosing] = useState(false);
+  const [mobile, setMobile] = useState(window.innerWidth <= 1024);
 
-  const handleCloseNav = () => {
-    setIsClosing(true);
-    setTimeout(() => {
-      setShowNav(false);
-      setIsClosing(false);
-    }, 300);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1024px)");
+
+    const handleResize = (e) => {
+      setMobile(e.matches);
+      // Reset showNav when switching to desktop
+      if (!e.matches) {
+        setShowNav(false);
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleResize);
+    };
+  }, []);
+
+  const toggleNav = () => {
+    setShowNav(prev => !prev);
   };
 
-  const { "--background": bgColor } = useCSSVariables(
-    ["--background"],
-    "body",
-    [theme]
-  );
-
   return (
-    <header className="header" style={{ backgroundColor: bgColor }}>
-      {/* Botón de menú - solo visible en móvil */}
-      <div className="menu-toggle">
-        <Logo isClickable={true} onClick={() => setShowNav(true)} showMenuIcon={true} />
-      </div>
-
-      {/* Navbar única - responsive */}
-      <nav className={`nav-container ${showNav ? 'show' : ''} ${isClosing ? 'closing' : ''}`}>
-        <button className="close-button" onClick={handleCloseNav}>
-          ✖️
-        </button>
-
-        <Logo />
-        <Navbar onClose={handleCloseNav} />
-
-        <div className="settings-wrapper">
-          <Settings />
-        </div>
-      </nav>
+    <header className="header">
+       <Logo mobile={mobile} showNav={showNav} onToggleNav={toggleNav} />
+       {(!mobile || showNav) && <Navbar />}
+       {(!mobile || showNav) && <Settings />}
     </header>
   );
 }
 
 export default Header;
+
+/* si mobile==true y  showNav==true entonces el logo debe mostrar una X 
+  si showNav==false y mobile==True entonces poner el div-links y div-settings con display none y el logo cuando haga hover mostrar el icono de menu
+*/
+
