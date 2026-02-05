@@ -6,11 +6,15 @@ export const translations = {
       navbar: ["About", "Experience", "Projects", "Contact Me"],
     },
     hero: {
-      greeting: `Hello!`,
-      title: `Hi — I'm Cristina.`,
-      text: `
-       I’m a developer who genuinely cares about the craft. I have a pixel-perfect eye, I’m committed to doing things well, and I enjoy turning ideas into clean, intentional interfaces. I use AI as a tool to work smarter — not to replace thinking, but to amplify it — both in my workflow and in everyday life. I’m deeply autodidactic, always learning, experimenting, and refining how I build. If you want the full story — my experience, projects, and process — it’s right there in the video.
-      `,
+      greeting: `Hello! I am Cristina Portilla.`,
+      title: `Full Stack Developer`,
+      text: [
+        `I'm a developer who genuinely cares about the craft. I have a pixel-perfect eye, I'm committed to doing things well, and I enjoy turning ideas into clean, intentional interfaces.`,
+        `I use AI as a tool to work smarter — not to replace thinking, but to amplify it — both in my workflow and in everyday life.`,
+        `I contribute ideas that add value and maintain an ongoing exchange with the people I collaborate with.`,
+        `I'm deeply autodidactic, always learning, experimenting, and refining how I build.`,
+        `If you want the full story — my experience, projects, and process — it's right there in the video.`,
+      ],
       viewProjects: `Check my Work`,
       contactMe: `Contact Me`,
     },
@@ -180,15 +184,15 @@ export const translations = {
       navbar: ["Acerca de Mi", "Experience", "Proyectos", "Contactame"],
     },
     hero: {
-      greeting: `Hola!`,
-      title: `Hola — soy Cristina.`,
-      text: `
-      Soy desarrolladora y me importa lo que hago. Tengo ojo pixel-perfect, me comprometo a hacer las cosas bien y disfruto convertir ideas en interfaces limpias e intencionales.
-
-      Uso la IA como una herramienta para trabajar de forma más inteligente — no para reemplazar el pensamiento, sino para potenciarlo — tanto en mi flujo de trabajo como en mi día a día. Soy muy autodidacta: siempre estoy aprendiendo, experimentando y refinando cómo construyo.
-
-Si quieres conocer la historia completa — mi experiencia, proyectos y proceso — está justo ahí en el video.
-      `,
+      greeting: `Hola! Soy Cristina Portilla.`,
+      title: `Full Stack Developer`,
+      text: [
+        `Realmente me importa lo que hago. Cuido los pequeños detalles al convertir ideas en interfaces limpias e intencionales.`,
+        `Uso la IA como una herramienta para trabajar de forma más inteligente — no para reemplazar el pensamiento, sino para potenciarlo — tanto en mi flujo de trabajo como en mi día a día.`,
+        `Aporto ideas que sumen valor y mantengo un intercambio constante con las personas con las que colaboro.`,
+        `Soy muy autodidacta: siempre estoy aprendiendo, experimentando y refinando cómo construyo.`,
+        `Si quieres conocer la historia completa — mi experiencia, proyectos y proceso — está justo ahí en el video.`,
+      ],
       viewProjects: `Mira mi trabajo`,
       contactMe: `Hablemos`,
     },

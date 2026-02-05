@@ -1,4 +1,3 @@
-/* Hero Content Layout */
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -7,33 +6,53 @@
   padding: 2rem 0;
 }
 
-/* Text Column */
 .hero-text-column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+.hero-greeting {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--main-text);
+  margin: 0;
 }
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: 20px;
   color: var(--main-text);
   margin: 0;
 }
 
 .hero-description {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--main-text);
-  white-space: pre-line;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.hero-description p {
-  margin-bottom: 1rem;
+.hero-description li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
-/* Buttons */
+.hero-bullet-icon {
+  color: var(--accent-two);
+  font-size: 18px !important;
+  flex-shrink: 0;
+  margin-top: 3px;
+  filter: drop-shadow(0 0 8px var(--accent-one)) drop-shadow(0 0 15px var(--accent-one));
+}
+
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +89,6 @@
   color: #fff;
 }
 
-/* Video Column */
 .hero-video-column {
   width: 100%;
 }
@@ -78,7 +96,7 @@
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -93,7 +111,6 @@
   border: none;
 }
 
-/* Responsive: > 1024px - Two columns side by side */
 @media (min-width: 1025px) {
   .hero-content {
     flex-direction: row;
@@ -111,18 +128,4 @@
     max-width: 50%;
   }
 
-  .hero-title {
-    font-size: 2.5rem;
-  }
-}
-
-/* Large screens */
-@media (min-width: 1280px) {
-  .hero-title {
-    font-size: 3rem;
-  }
-
-  .hero-description {
-    font-size: 1.1rem;
-  }
 }

@@ -1,4 +1,5 @@
 import { useTranslation } from "../../context/TranslationContext";
+import StarIcon from "@mui/icons-material/Star";
 
 import "../../styles/hero/hero.css";
 
@@ -6,6 +7,7 @@ function Hero() {
   const translation = useTranslation();
   const hero = translation.hero;
 
+  const greeting = hero.greeting;
   const title = hero.title;
   const text = hero.text;
   const viewProjects = hero.viewProjects;
@@ -16,11 +18,16 @@ function Hero() {
       <div className="container-section">
         <div className="hero-content">
           <div className="hero-text-column">
+            <p className="hero-greeting">{greeting} 👋</p>
             <h1 className="hero-title">{title}</h1>
-            <div
-              className="hero-description"
-              dangerouslySetInnerHTML={{ __html: text }}
-            ></div>
+            <ul className="hero-description">
+              {text.map((paragraph, index) => (
+                <li key={index}>
+                  <StarIcon className="hero-bullet-icon" />
+                  <span>{paragraph}</span>
+                </li>
+              ))}
+            </ul>
             <div className="hero-buttons">
               <a href="#work" className="btn-projects glow">
                 {viewProjects}
