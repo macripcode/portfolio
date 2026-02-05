@@ -181,10 +181,13 @@ export const translations = {
     },
     hero: {
       greeting: `Hola!`,
-      title: `Acerca de Mi`,
+      title: `Hola — soy Cristina.`,
       text: `
-        <p>Soy una desarrolladora frontend constante y disciplinada, enfocada en crear soluciones visualmente atractivas, funcionales y escalables, con una fuerte atención al diseño UI/UX.</p>
-        <p>Además, cuento con experiencia previa en tecnologías backend como <strong>PHP</strong> y <strong>Django</strong>, lo que me permite tener una visión integral del desarrollo web.</p>
+      Soy desarrolladora y me importa lo que hago. Tengo ojo pixel-perfect, me comprometo a hacer las cosas bien y disfruto convertir ideas en interfaces limpias e intencionales.
+
+      Uso la IA como una herramienta para trabajar de forma más inteligente — no para reemplazar el pensamiento, sino para potenciarlo — tanto en mi flujo de trabajo como en mi día a día. Soy muy autodidacta: siempre estoy aprendiendo, experimentando y refinando cómo construyo.
+
+Si quieres conocer la historia completa — mi experiencia, proyectos y proceso — está justo ahí en el video.
       `,
       viewProjects: `Mira mi trabajo`,
       contactMe: `Hablemos`,
