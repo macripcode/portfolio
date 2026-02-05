@@ -1,9 +1,8 @@
 .header {
   position: relative;
   z-index: 1000;
-  background-color: #000000;
-  color: var(--text);
-  border-bottom: 1px solid #2a2a2a;
+  color: var(--main-text);
+  border-bottom: 1px solid var(--background-second);
   height: 100px;
 }
 

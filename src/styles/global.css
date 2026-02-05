@@ -10,6 +10,7 @@
 
 .glow:hover {
   box-shadow: 0 0 40px color-mix(in srgb, var(--accent-one) 50%, transparent);
+  border-color: var(--accent-two);
 }
 
 .glow-text {
@@ -18,5 +19,13 @@
 
 .glow-text:hover {
   text-shadow: 0 0 20px color-mix(in srgb, var(--accent-one) 85%, transparent);
+}
+
+.gradient {
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent-one) 40%, transparent) 0%,
+    color-mix(in srgb, var(--accent-two) 100%, transparent) 100%
+  );
 }
 

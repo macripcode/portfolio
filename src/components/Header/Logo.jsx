@@ -10,6 +10,7 @@ function Logo({ isClickable = false, onClick, showMenuIcon = false }) {
   // Build dynamic className
   const wrapperClasses = [
     'div-logo-wrapper',
+    'gradient',
     'glow',
     isClickable && 'clickable',
     showMenuIcon && 'with-menu-icon'

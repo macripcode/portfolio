@@ -11,7 +11,7 @@
 
 body.dark {
   --background: #0B0F1A;
-  --background-second: #111827;
+  --background-second: #2A1F4D;
   --main-text: #E5E7EB;
   --accent-one: var(--cyan);
   --accent-two: var(--purple);
@@ -22,7 +22,7 @@ body.dark {
 
 body.light {
   --background: #FFFFFF;
-  --background-second: #F4F6FA;
+  --background-second: #E5E7EB;
   --main-text: #1F2937;
   --accent-one: var(--cyan);
   --accent-two: var(--purple);

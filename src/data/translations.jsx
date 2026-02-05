@@ -3,7 +3,7 @@ import { Language } from "@mui/icons-material";
 export const translations = {
   en: {
     header: {
-      navbar: ["About", "Experience", "Projects", "Languages"],
+      navbar: ["About", "Experience", "Proyects", "Contact Me"],
     },
     hero: {
       greeting: `Hello!`,
@@ -178,7 +178,7 @@ export const translations = {
   },
   es: {
     header: {
-      navbar: ["Acerca de Mi", "Experiencia", "Proyectos", "Idiomas"],
+      navbar: ["Acerca de Mi", "Experience", "Proyectos", "Contactame"],
     },
     hero: {
       greeting: `Hola!`,
