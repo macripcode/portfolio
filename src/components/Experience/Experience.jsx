@@ -1,17 +1,9 @@
-import { useContext } from "react";
-
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
-
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
-import { useCSSVariables } from "../../hooks/useCSSVariables";
-
-import { ThemeContext } from "../../context/ThemeContext";
-import { LanguageContext } from "../../context/LanguageContext";
 import { useTranslation } from "../../context/TranslationContext";
 
 import Project from "../Experience/Project";
@@ -21,29 +13,16 @@ import "react-vertical-timeline-component/style.min.css";
 import "../../styles/experience/experience.css";
 
 function Experience() {
-  const { theme } = useContext(ThemeContext);
-  const { lang } = useContext(LanguageContext);
-
   const translation = useTranslation();
   const experience = translation.experience;
   const title = experience.title;
   const careerPath = experience.careerPath;
 
-  const {
-    "--hero-timeline-bg": timelineBg,
-    "--hero-timeline-color": timelineColor,
-    "--hero-timeline-bgIcon": timelineBgIcon,
-  } = useCSSVariables(
-    ["--hero-timeline-bg", "--hero-timeline-color", "--hero-timeline-bgIcon"],
-    "body",
-    [theme]
-  );
-
   return (
     <section id="experience">
       <div className="container-section">
         <div className="hero-experience-div">
-          <div className="title-section">
+          <div className="title-section title">
             <h2>{title}</h2>
           </div>
 
@@ -56,17 +35,13 @@ function Experience() {
                   <VerticalTimelineElement
                     key={index}
                     className="vertical-timeline-element--work"
-                    contentStyle={{
-                      background: timelineBg,
-                      color: timelineColor,
-                    }}
                     contentArrowStyle={{
-                      borderRight: `7px solid  ${timelineBgIcon}`,
+                      borderRight: "7px solid var(--accent-one)",
                     }}
                     date={date}
                     iconStyle={{
-                      background: { timelineBgIcon },
-                      color: { timelineColor },
+                      background: "var(--accent-two)",
+                      color: "var(--accent-one)",
                     }}
                     icon={type === "job" ? <WorkIcon /> : <SchoolIcon />}
                   >

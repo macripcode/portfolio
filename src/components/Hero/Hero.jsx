@@ -1,5 +1,6 @@
 import { useTranslation } from "../../context/TranslationContext";
 import StarIcon from "@mui/icons-material/Star";
+import Experience from "../Experience/Experience";
 
 import "../../styles/hero/hero.css";
 
@@ -18,9 +19,9 @@ function Hero() {
       <div className="container-section">
         <div className="hero-content">
           <div className="hero-text-column">
-            <p className="hero-greeting">{greeting} 👋</p>
-            <h1 className="hero-title">{title}</h1>
-            <ul className="hero-description">
+            <p className="hero-greeting subtitle-text">{greeting} 👋</p>
+            <h1 className="hero-title title">{title}</h1>
+            <ul className="hero-description common-text">
               {text.map((paragraph, index) => (
                 <li key={index}>
                   <StarIcon className="hero-bullet-icon" />
@@ -28,7 +29,7 @@ function Hero() {
                 </li>
               ))}
             </ul>
-            <div className="hero-buttons">
+            <div className="hero-buttons common-text">
               <a href="#work" className="btn-projects glow">
                 {viewProjects}
               </a>
@@ -47,6 +48,9 @@ function Hero() {
               ></iframe>
             </div>
           </div>
+        </div>
+        <div className="experience-content">
+          <Experience />
         </div>
       </div>
     </section>

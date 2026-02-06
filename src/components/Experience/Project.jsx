@@ -1,13 +1,23 @@
-// components/Project.jsx
 import { useState, useContext } from "react";
-
 import { useCSSVariables } from "../../hooks/useCSSVariables";
-
 import { ThemeContext } from "../../context/ThemeContext";
 import { useTranslation } from "../../context/TranslationContext";
+import DevIconElement from "../DevIconElement/DevIconElement";
+
+const techToIcon = {
+  "HTML": "devicon-html5-plain",
+  "CSS": "devicon-css3-plain",
+  "JavaScript": "devicon-javascript-plain",
+  "Python/Django": "devicon-django-plain",
+  "React": "devicon-react-original",
+  "PHP/Codeigniter": "devicon-codeigniter-plain",
+  "AngularJS": "devicon-angularjs-plain",
+  "Docker": "devicon-docker-plain",
+  "RabbitMQ": "devicon-rabbitmq-original",
+  "DOMJudge": "devicon-java-plain",
+};
 
 function Project({ title, description, techStack }) {
-  
   const [expanded, setExpanded] = useState(false);
 
   const { theme } = useContext(ThemeContext);
@@ -25,7 +35,7 @@ function Project({ title, description, techStack }) {
   );
 
   return (
-    <div className="project">
+    <div className="project gradient">
       <p><strong>{title}</strong></p>
 
       <button
@@ -52,7 +62,14 @@ function Project({ title, description, techStack }) {
         </ul>
       )}
 
-      <p><strong>Tech Stack:</strong> {techStack.join(" | ")}</p>
+      <div className="tech-stack-section">
+        <p className="tech-stack-title"><strong>Tech Stack</strong></p>
+        <div className="tech-stack-grid">
+          {techStack.map((tech, index) => (
+            <DevIconElement key={index} icon={techToIcon[tech] || "devicon-devicon-plain"} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

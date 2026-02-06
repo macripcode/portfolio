@@ -1,0 +1,35 @@
+.devicon-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+  background: transparent;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(var(--background), var(--background)),
+    linear-gradient(135deg, var(--accent-one), var(--accent-two));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.devicon-container i {
+  font-size: 40px;
+}
+
+.tech-stack-section {
+  margin-top: 15px;
+}
+
+.tech-stack-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+}

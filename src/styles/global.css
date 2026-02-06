@@ -1,11 +1,13 @@
-/* src/styles/global.css */
 @import './variables.css';
-
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
-/* Utility classes */
 .glow {
   transition: box-shadow 0.3s ease;
+}
+
+.glow-static {
+  box-shadow: 0 0 40px color-mix(in srgb, var(--accent-one) 50%, transparent);
+  border-color: var(--accent-two);
 }
 
 .glow:hover {
@@ -29,3 +31,25 @@
   );
 }
 
+.title, 
+.highlight {
+  font-family: var(--font-heading);
+}
+
+.subtitle-text,
+.common-text {
+  font-family: var(--font-body);
+}
+
+.title {
+  font-size: 22px;
+}
+
+.subtitle-text,
+.highlight {
+  font-size: 20px;
+}
+
+.common-text {
+  font-size: 18px;
+}

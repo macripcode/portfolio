@@ -1,5 +1,3 @@
-import { Language } from "@mui/icons-material";
-
 export const translations = {
   en: {
     header: {
@@ -19,7 +17,7 @@ export const translations = {
       contactMe: `Contact Me`,
     },
     experience: {
-      title: `Professional Experience and Education`,
+      title: `Take a look at my professional experience and education`,
       viewMore: `Show More`,
       viewLess: `Show less`,
       careerPath: [
@@ -197,7 +195,7 @@ export const translations = {
       contactMe: `Hablemos`,
     },
     experience: {
-      etitle: `Experiencia Profesional y Educación`,
+      title: `Conoce mi experiencia y formación`,
       viewMore: `Mostrar más`,
       viewLess: `Mostrar menos`,
       careerPath: [

@@ -18,7 +18,7 @@ function Navbar({ onClose }) {
               key={index}
               href={hrefs[index]}
               style={{ margin: "0 1rem" }}
-              className="nav-links glow-text"
+              className="nav-links glow-text highlight"
               onClick={onClose}
             >
               {label}
