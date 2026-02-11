@@ -238,7 +238,7 @@ export const translations = {
           icon: "devicon-github-original",
         },
         {
-          name: "linkedin.com/in/cristinaportilla",
+          name: "linkedin.com/in/maria-cristina-portilla-cortes-32802868",
           url: "https://www.linkedin.com/in/maria-cristina-portilla-cortes-32802868/",
           icon: "devicon-linkedin-plain",
         },
@@ -493,7 +493,7 @@ export const translations = {
           icon: "devicon-github-original",
         },
         {
-          name: "linkedin.com/in/cristinaportilla",
+          name: "linkedin.com/in/maria-cristina-portilla-cortes-32802868",
           url: "https://www.linkedin.com/in/maria-cristina-portilla-cortes-32802868/",
           icon: "devicon-linkedin-plain",
         },
