@@ -24,6 +24,8 @@ function App() {
       <Experience />
       <Work />
       {/*<Languages />*/}
+      <div className="stars"></div>
+      <div className="aurora" />
     </main>
   );
 }
