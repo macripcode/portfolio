@@ -1,10 +1,9 @@
-import React, { useRef, useState, useContext } from "react";
+import React, { useContext } from "react";
 
-import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { useTranslation } from "../../context/TranslationContext";
 
-import ProjectCard from "./ProjectCard";
+import Slider from "./Slider";
 
 import "../../styles/work/work.css";
 
@@ -26,11 +25,7 @@ function Work() {
             <h2>{title}</h2>
           </div>
 
-          <div className="project-grid">
-            {projects.map((project, index) => {
-              return <ProjectCard {...project}></ProjectCard>;
-            })}
-          </div>
+          <Slider projects={projects} />
 
         </div>
         

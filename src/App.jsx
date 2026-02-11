@@ -22,8 +22,8 @@ function App() {
       <Header />
       <Hero />
       <Experience />
-      {/*<Work />
-      <Languages />*/}
+      <Work />
+      {/*<Languages />*/}
     </main>
   );
 }
