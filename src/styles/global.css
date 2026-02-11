@@ -35,6 +35,14 @@
   );
 }
 
+.gradient-low {
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent-one) 20%, transparent) 0%,
+    color-mix(in srgb, var(--accent-two) 30%, transparent) 100%
+  );
+}
+
 .title, 
 .highlight {
   font-family: var(--font-heading);
