@@ -21,6 +21,7 @@
     color: var(--main-text) !important;
     border: 1px solid var(--accent-two);
     filter: drop-shadow(0 0 0px var(--accent-one)) drop-shadow(0 0 15px var(--accent-one));
+    padding-bottom: 0 !important;
 }
 
 .vertical-timeline-element-content-arrow {
@@ -37,6 +38,10 @@
     border-radius: 12px;
     padding: 20px;
     margin: 10px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {

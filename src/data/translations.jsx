@@ -126,7 +126,7 @@ export const translations = {
       ],
     },
     work: {
-      title: "Projects",
+      title: "Things I’ve Built",
       projects: [
         {
           title: "Bastet: Product Catalog Platform",
@@ -348,7 +348,7 @@ export const translations = {
       ],
     },
     work: {
-      title: "Proyectos",
+      title: "Things I’ve Built",
       projects: [
         {
           title: "Bastet: Plataforma de Catálogo de Productos",

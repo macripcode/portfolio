@@ -22,7 +22,7 @@ function Experience() {
     <section id="experience">
       <div className="container-section">
         <div className="hero-experience-div">
-          <div className="title-section title">
+          <div className="title-section title under-space-title">
             <h2>{title}</h2>
           </div>
 

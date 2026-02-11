@@ -21,7 +21,7 @@ function Work() {
 
         <div className="work-div">
 
-          <div className="title-section">
+          <div className="title-section title under-space-title">
             <h2>{title}</h2>
           </div>
 
