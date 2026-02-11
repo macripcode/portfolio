@@ -23,7 +23,7 @@ function Project({ title, description, techStack }) {
   );
 
   return (
-    <div className="project gradient">
+    <div className="project gradient-low">
       <p><strong>{title}</strong></p>
 
       <button
