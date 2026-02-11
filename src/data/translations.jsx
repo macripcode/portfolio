@@ -129,7 +129,7 @@ export const translations = {
       title: "Projects",
       projects: [
         {
-          title: "Resume",
+          title: "Portfolio",
           description: `Designed and developed a modern portfolio to present my work and experience.`,
           links: [
             {
@@ -141,6 +141,7 @@ export const translations = {
           date: "2025",
           resourceUrl: "/assets/resume.png",
           resourceType: "image",
+          state: "Done",
         },
         {
           title: "UVDOMJugde",
@@ -175,6 +176,7 @@ export const translations = {
           date: "2019",
           resourceUrl: "/assets/uvdomjudge.jpeg",
           resourceType: "image",
+          state: "Done",
         },
       ],
     },
@@ -324,7 +326,7 @@ export const translations = {
       title: "Proyectos",
       projects: [
         {
-          title: "Resume",
+          title: "Portafolio",
           description:
             "Diseñé y desarrollé un portafolio moderno para presentar mi trabajo y experiencia.",
           links: [
@@ -337,6 +339,7 @@ export const translations = {
           date: "2025",
           resourceUrl: "/assets/resume.png",
           resourceType: "image",
+          estado: "Completado",
         },
         {
           title: "UVDOMJugde",
@@ -371,6 +374,7 @@ export const translations = {
           date: "2019",
           resourceUrl: "/assets/uvdomjudge.jpeg",
           resourceType: "image",
+          estado: "Completado",
         },
       ],
     },
