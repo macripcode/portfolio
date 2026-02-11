@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import "../../styles/header/settings.css";
@@ -9,31 +9,45 @@ import "../../styles/header/settings.css";
 function Settings() {
   const { theme, setTheme } = useContext(ThemeContext);
   const { lang, setLang } = useContext(LanguageContext);
+  const [themeAnimating, setThemeAnimating] = useState(false);
+  const [langAnimating, setLangAnimating] = useState(false);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+    setThemeAnimating(true);
+    setTimeout(() => {
+      setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+      setTimeout(() => setThemeAnimating(false), 600);
+    }, 300);
   };
 
   const toggleLanguage = () => {
-    setLang((prev) => (prev === "en" ? "es" : "en"));
+    setLangAnimating(true);
+    setTimeout(() => {
+      setLang((prev) => (prev === "en" ? "es" : "en"));
+      setTimeout(() => setLangAnimating(false), 600);
+    }, 300);
   };
 
   return (
     <div className="div-settings">
       <button
-        className="settings-btn gradient glow"
+        className={`settings-btn gradient glow ${langAnimating ? "settings-btn--spin" : ""}`}
         onClick={toggleLanguage}
         aria-label="Toggle language"
       >
-        {lang === "en" ? "🇨🇴" : "🇺🇸"}
+        <span className={`settings-icon ${langAnimating ? "settings-icon--fade" : ""}`}>
+          {lang === "en" ? "🇨🇴" : "🇺🇸"}
+        </span>
       </button>
 
       <button
-        className="settings-btn gradient glow"
+        className={`settings-btn gradient glow ${themeAnimating ? "settings-btn--spin" : ""}`}
         onClick={toggleTheme}
         aria-label="Toggle theme"
       >
-        {theme === "dark" ? "🌙" : "☀️"}
+        <span className={`settings-icon ${themeAnimating ? "settings-icon--fade" : ""}`}>
+          {theme === "dark" ? "🌙" : "☀️"}
+        </span>
       </button>
     </div>
   );

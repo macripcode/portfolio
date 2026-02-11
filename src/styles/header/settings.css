@@ -27,6 +27,45 @@
   flex-shrink: 0;
   overflow: hidden;
   aspect-ratio: 1;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.6s ease,
+              color 0.8s ease;
+}
+
+.settings-btn:active {
+  transform: scale(0.9);
+}
+
+/* Spin animation on toggle */
+.settings-btn--spin {
+  animation: btn-spin 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes btn-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Icon fade transition */
+.settings-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.settings-icon--fade {
+  opacity: 0;
+  transform: scale(0.5);
 }
 
 @media (max-width: 1024px) {

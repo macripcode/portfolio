@@ -8,4 +8,5 @@ body {
   background-color: var(--background);
   color: var(--main-text);
   font-family: var(--font-body);
+  transition: background-color 1s ease, color 1s ease;
 }
