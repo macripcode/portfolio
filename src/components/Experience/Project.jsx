@@ -17,6 +17,11 @@ const techToIcon = {
   "DOMJudge": "devicon-java-plain",
   "TypeScript": "devicon-typescript-plain",
   "AWS": "devicon-amazonwebservices-plain-wordmark",
+  "Flask": "devicon-flask-original",
+  "SQLAlchemy": "devicon-sqlalchemy-plain",
+  "SQLite": "devicon-sqlite-plain",
+  "MySQL": "devicon-mysql-plain",
+  "GitHub Actions": "devicon-githubactions-plain",
 };
 
 function Project({ title, description, techStack }) {

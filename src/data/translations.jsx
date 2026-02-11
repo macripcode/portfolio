@@ -129,6 +129,31 @@ export const translations = {
       title: "Projects",
       projects: [
         {
+          title: "Bastet: Product Catalog Platform",
+          description:
+            "Secure product catalog API built with Flask and JWT as the foundation of an e-commerce platform. Designed to integrate with a web client and a React admin dashboard for inventory and shipping management, featuring authentication, CRUD operations, containerization, and automated deployment.",
+          links: [
+            {
+              text: "Repository",
+              url: "https://github.com/macripcode/flask-jwt-api",
+            },
+          ],
+          techStack: [
+            "Flask",
+            "SQLAlchemy",
+            "SQLite",
+            "MySQL",
+            "Docker",
+            "AWS",
+            "GitHub Actions",
+            "React",
+          ],
+          date: "2025",
+          resourceUrl: "/assets/bastet.png",
+          resourceType: "image",
+          estado: "Working on",
+        },
+        {
           title: "Portfolio",
           description: `Designed and developed a modern portfolio to present my work and experience.`,
           links: [
@@ -325,6 +350,31 @@ export const translations = {
     work: {
       title: "Proyectos",
       projects: [
+        {
+          title: "Bastet: Plataforma de Catálogo de Productos",
+          description:
+            "API segura para la gestión de un catálogo de productos construida con Flask y JWT como base de una plataforma de e-commerce. Diseñada para integrarse con una aplicación web y un dashboard administrativo en React para gestión de inventario y envíos, incluyendo autenticación, operaciones CRUD, contenedorización y despliegue automatizado.",
+          links: [
+            {
+              text: "Repositorio",
+              url: "https://github.com/macripcode/flask-jwt-api",
+            },
+          ],
+          techStack: [
+            "Flask",
+            "SQLAlchemy",
+            "SQLite",
+            "MySQL",
+            "Docker",
+            "AWS",
+            "GitHub Actions",
+            "React",
+          ],
+          date: "2025",
+          resourceUrl: "/assets/bastet.png",
+          resourceType: "image",
+          estado: "En progreso",
+        },
         {
           title: "Portafolio",
           description:
