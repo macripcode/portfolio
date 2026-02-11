@@ -220,6 +220,38 @@ export const translations = {
         },
       ],
     },
+    contact: {
+      title: "Let's Talk!",
+      info: [
+        `I'm open to freelance work, collaborations, and new opportunities.`,
+        `Do you have a question, a project idea, or just want to say hi? Drop me a message and I'll respond as soon as I can.`,
+      ],
+      socialMedia: [
+        {
+          name: "macripco1311@gmail.com",
+          url: "mailto:macripco1311@gmail.com",
+          icon: "email",
+        },
+        {
+          name: "github.com/macripcode",
+          url: "https://github.com/macripcode",
+          icon: "devicon-github-original",
+        },
+        {
+          name: "linkedin.com/in/cristinaportilla",
+          url: "https://www.linkedin.com/in/maria-cristina-portilla-cortes-32802868/",
+          icon: "devicon-linkedin-plain",
+        },
+      ],
+      fullName: "Full Name",
+      email: "Email Address",
+      subject: "Subject",
+      message: "Message",
+      send: "Send Message",
+      sending: "Sending...",
+      successMsg: "Message sent successfully!",
+      errorMsg: "Something went wrong. Please try again.",
+    },
   },
   es: {
     header: {
@@ -442,6 +474,38 @@ export const translations = {
           levelNumber: 5,
         },
       ],
+    },
+    contact: {
+      title: "Hablemos!",
+      info: [
+        `Estoy abierta a trabajo freelance, colaboraciones y nuevas oportunidades.`,
+        `¿Tienes una pregunta, una idea de proyecto o simplemente quieres saludar? Escríbeme y te responderé lo antes posible.`,
+      ],
+      socialMedia: [
+        {
+          name: "macripco1311@gmail.com",
+          url: "mailto:macripco1311@gmail.com",
+          icon: "email",
+        },
+        {
+          name: "github.com/macripcode",
+          url: "https://github.com/macripcode",
+          icon: "devicon-github-original",
+        },
+        {
+          name: "linkedin.com/in/cristinaportilla",
+          url: "https://www.linkedin.com/in/maria-cristina-portilla-cortes-32802868/",
+          icon: "devicon-linkedin-plain",
+        },
+      ],
+      fullName: "Nombre Completo",
+      email: "Correo Electrónico",
+      subject: "Asunto",
+      message: "Mensaje",
+      send: "Enviar Mensaje",
+      sending: "Enviando...",
+      successMsg: "¡Mensaje enviado con éxito!",
+      errorMsg: "Algo salió mal. Por favor, inténtalo de nuevo.",
     },
   },
 };

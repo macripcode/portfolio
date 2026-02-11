@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
 import Languages from "./components/Languages/Languages";
+import Contact from "./components/Contact/Contact";
 
 import { useContext, useState, useEffect } from "react";
 
@@ -24,6 +25,7 @@ function App() {
       <Experience />
       <Work />
       {/*<Languages />*/}
+      <Contact />
       <div className="stars"></div>
       <div className="aurora" />
     </main>
