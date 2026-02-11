@@ -49,9 +49,6 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="experience-content">
-          <Experience />
-        </div>
       </div>
     </section>
   );
