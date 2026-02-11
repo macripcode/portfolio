@@ -15,6 +15,8 @@ const techToIcon = {
   "Docker": "devicon-docker-plain",
   "RabbitMQ": "devicon-rabbitmq-original",
   "DOMJudge": "devicon-java-plain",
+  "TypeScript": "devicon-typescript-plain",
+  "AWS": "devicon-amazonwebservices-plain-wordmark",
 };
 
 function Project({ title, description, techStack }) {

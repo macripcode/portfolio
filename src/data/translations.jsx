@@ -22,6 +22,23 @@ export const translations = {
       viewLess: `Show less`,
       careerPath: [
         {
+          type: "freelance",
+          date: "January 2025 - Current",
+          rol: "Freelance Front-End / Software Engineer",
+          location: "Remote",
+          projects: [
+            {
+              title: "Design-to-Web Implementations",
+              description: [
+                `Converted high-fidelity UI/UX designs into responsive, production-ready web interfaces, improving visual consistency and usability across devices.`,
+                `Reduced development turnaround time by building reusable React and TypeScript components, enabling faster feature delivery and easier maintenance.`,
+                `Improved performance and accessibility by applying modern front-end best practices, ensuring scalable and user-friendly web experiences.`,
+              ],
+              techStack: ["React", "HTML", "CSS", "JavaScript", "TypeScript", "AWS"],
+            }
+          ],
+        },
+        {
           type: "job",
           date: "June 2020 – January 2025",
           rol: "Software Engineer at Spectrio",
@@ -199,6 +216,23 @@ export const translations = {
       viewMore: `Mostrar más`,
       viewLess: `Mostrar menos`,
       careerPath: [
+        {
+          type: "freelance",
+          date: "Enero 2025 - Actualidad",
+          rol: "Ingeniera de Software / Front-End Freelance",
+          location: "Remoto",
+          projects: [
+            {
+              title: "Implementaciones de Diseño a Web",
+              description: [
+                `Convertí diseños UI/UX de alta fidelidad en interfaces web responsivas listas para producción, mejorando la consistencia visual y la usabilidad en distintos dispositivos.`,
+                `Reduje los tiempos de desarrollo mediante la creación de componentes reutilizables en React y TypeScript, permitiendo entregas más rápidas y mantenimiento más sencillo.`,
+                `Mejoré el rendimiento y la accesibilidad aplicando buenas prácticas modernas de front-end, garantizando experiencias web escalables y amigables para el usuario.`,
+              ],
+              techStack: ["React", "HTML", "CSS", "JavaScript", "TypeScript", "AWS"],
+            }
+          ],
+        },
         {
           type: "job",
           date: "Junio 2020 – Enero 2025",
