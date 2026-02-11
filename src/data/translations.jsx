@@ -250,7 +250,7 @@ export const translations = {
       send: "Send Message",
       sending: "Sending...",
       successMsg: "Message sent successfully!",
-      errorMsg: "Something went wrong. Please try again.",
+      errorMsg: "Relax, I am working on it.",
     },
   },
   es: {
@@ -505,7 +505,7 @@ export const translations = {
       send: "Enviar Mensaje",
       sending: "Enviando...",
       successMsg: "¡Mensaje enviado con éxito!",
-      errorMsg: "Algo salió mal. Por favor, inténtalo de nuevo.",
+      errorMsg: "Relajate, que ando trabajando en esto.",
     },
   },
 };
