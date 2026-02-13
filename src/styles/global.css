@@ -53,7 +53,7 @@ html {
   padding-bottom: 30px;
 }
 .glow {
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 1s ease;
 }
 
 .glow-static {
@@ -115,4 +115,47 @@ html {
 
 .under-space-title {
   margin-bottom: 30px;
+}
+
+.card{
+  margin: 0 auto;
+  padding: 20px;
+  width: 300px;
+  background: var(--background);
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card::after, .card::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), var(--accent-one),var(--accent-two),  var(--background), var(--accent-one),  var(--accent-two),var(--background));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::before{
+  filter: blur(15px);
+  opacity: 1;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
