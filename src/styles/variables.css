@@ -7,7 +7,10 @@
 
   /*Light*/
   --light-pink: #fdd9fc;
-  --light-blue: #8dc3f9;
+  --light-blue: #3a2492;
+  --dark-pink: #a557a0;
+  --purple-blue: #3a2492;
+   
 
   /*Dark*/
   --light-purple: #ad80db; 
@@ -15,18 +18,20 @@
   --purple-dark: #220f3a;
 }
 
+body.light {
+  --background: #FFFFFF;
+  --main-text: #291f37;
+  --accent-one: var(--dark-pink);
+  --accent-two: var(--purple-blue);
+  --glow: var(--light-pink)
+}
+
 body.dark {
   --background: #0B0F1A;
   --main-text: #E5E7EB;
   --accent-one: var(--cyan);
-  --accent-two: var(--purple);
+  --accent-two: var(--dark-blue);
   --glow: var(--light-purple);
 }
 
-body.light {
-  --background: #FFFFFF;
-  --main-text: #291f37;
-  --accent-one: var(--purple-medium);
-  --accent-two: var(--dark-blue);
-  --glow: var(--light-pink)
-}
+

@@ -28,6 +28,10 @@ body.light .app-background {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.border-glow {
+  border: 3px solid var(--accent-two);
+}
+
 .container-section{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -38,12 +42,10 @@ body.light .app-background {
 
 .glow-static {
   box-shadow: 0 0 40px color-mix(in srgb, var(--accent-one) 50%, transparent);
-  border-color: var(--accent-two);
 }
 
 .glow:hover {
   box-shadow: 0 0 40px color-mix(in srgb, var(--accent-one) 50%, transparent);
-  border-color: var(--accent-two);
 }
 
 .glow-text {

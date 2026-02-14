@@ -1,14 +1,9 @@
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
 import { useTranslation } from "../../context/TranslationContext";
 
 import Project from "../Experience/Project";
-
-import "react-vertical-timeline-component/style.min.css";
 
 import "../../styles/experience/experience.css";
 
@@ -26,35 +21,36 @@ function Experience() {
             <h2>{title}</h2>
           </div>
 
-          <div className="timeline-div">
-            <VerticalTimeline>
-              {careerPath.map((item, index) => {
-                const { type, date, rol, location, projects } = item;
+          <div className="timeline">
+            {careerPath.map((item, index) => {
+              const { type, date, rol, location, projects } = item;
+              const side = index % 2 === 0 ? "left" : "right";
+              const isJob = type === "job" || type === "freelance";
 
-                return (
-                  <VerticalTimelineElement
-                    key={index}
-                    className="vertical-timeline-element--work"
-                    contentArrowStyle={{
-                      borderRight: "7px solid var(--accent-one)",
-                    }}
-                    date={date}
-                    iconStyle={{
-                      background: "var(--accent-two)",
-                      color: "var(--accent-one)",
-                    }}
-                    icon={type === "job" ? <WorkIcon /> : <SchoolIcon />}
-                  >
-                    <h3 className="vertical-timeline-element-title">{rol}</h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      {location}
-                    </h4>
+              return (
+                <motion.div
+                  key={index}
+                  className={`timeline-item ${side}`}
+                  initial={{ opacity: 0, x: side === "left" ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                >
+                  <div className="timeline-icon">
+                    {isJob ? <WorkIcon /> : <SchoolIcon />}
+                  </div>
+
+                  <div className="timeline-content glass-effect border-glow glow-static">
+                    <h3>{rol}</h3>
+                    <span className="timeline-date">{date}</span>
+                    <h4>{location}</h4>
+
                     <div>
-                      {projects.map((project, index) => {
+                      {projects.map((project, pIndex) => {
                         const { title, description, techStack } = project;
                         return (
                           <Project
-                            key={index}
+                            key={pIndex}
                             title={title}
                             description={description}
                             techStack={techStack}
@@ -62,10 +58,10 @@ function Experience() {
                         );
                       })}
                     </div>
-                  </VerticalTimelineElement>
-                );
-              })}
-            </VerticalTimeline>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>

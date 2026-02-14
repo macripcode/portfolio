@@ -43,7 +43,7 @@ function Contact() {
           <h2>{contact.title}</h2>
         </div>
 
-        <div className="contact-grid glass-effect glow-static">
+        <div className="contact-grid gradient-low glow-static">
           <div className="contact-info">
             <div className="contact-info-text">
               {contact.info.map((paragraph, index) => (
