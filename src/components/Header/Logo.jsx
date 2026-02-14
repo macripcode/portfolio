@@ -3,6 +3,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import "../../styles/header/logo.css";
 
 const LOGO_SRC = '/logo-pattern.png';
+const LOGO_SRC_2 = '/logo-pattern2.png';
 
 /**
  * Logo component with flip animation for mobile menu
@@ -36,22 +37,22 @@ function Logo({ mobile = false, showNav = false, onToggleNav }) {
         tabIndex={mobile ? 0 : undefined}
         aria-label={mobile ? (showNav ? 'Close menu' : 'Open menu') : undefined}
       >
-        {mobile ? (
-          <div className="logo-flip-container">
-            <div className={flipInnerClasses}>
-              <div className="logo-flip-front">{logoImage}</div>
-              <div className="logo-flip-back">
-                {showNav ? (
+        <div className="logo-flip-container">
+          <div className={flipInnerClasses}>
+            <div className="logo-flip-front">{logoImage}</div>
+            <div className="logo-flip-back">
+              {mobile ? (
+                showNav ? (
                   <ClearIcon className="clear-icon" />
                 ) : (
                   <MenuRoundedIcon className="menu-rounded-icon" />
-                )}
-              </div>
+                )
+              ) : (
+                <img src={LOGO_SRC_2} alt="Portfolio logo" className="logo-img" />
+              )}
             </div>
           </div>
-        ) : (
-          logoImage
-        )}
+        </div>
       </div>
     </div>
   );

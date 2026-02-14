@@ -29,7 +29,7 @@
 .logo-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* Flip animation for menu icon */
@@ -49,6 +49,13 @@
 
 .div-logo-wrapper.with-menu-icon:hover .logo-flip-inner {
   transform: rotateY(180deg);
+}
+
+/* Flip on hover in desktop */
+@media (min-width: 1025px) {
+  .div-logo-wrapper:hover .logo-flip-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Flip when clicked in mobile */
