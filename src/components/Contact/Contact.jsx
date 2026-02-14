@@ -43,7 +43,7 @@ function Contact() {
           <h2>{contact.title}</h2>
         </div>
 
-        <div className="contact-grid gradient-low glow-static">
+        <div className="contact-grid glass-effect border border-radius glow-static">
           <div className="contact-info">
             <div className="contact-info-text">
               {contact.info.map((paragraph, index) => (
@@ -76,25 +76,25 @@ function Contact() {
           <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
               <label className="common-text" htmlFor="fullName">{contact.fullName}</label>
-              <input type="text" id="fullName" name="from_name" required />
+              <input className="border" type="text" id="fullName" name="from_name" required />
             </div>
 
             <div className="form-group">
               <label className="common-text" htmlFor="email">{contact.email}</label>
-              <input type="email" id="email" name="reply_to" required />
+              <input className="border" type="email" id="email" name="reply_to" required />
             </div>
 
             <div className="form-group">
               <label className="common-text" htmlFor="subject">{contact.subject}</label>
-              <input type="text" id="subject" name="subject" required />
+              <input className="border" type="text" id="subject" name="subject" required />
             </div>
 
             <div className="form-group">
               <label className="common-text" htmlFor="message">{contact.message}</label>
-              <textarea id="message" name="message" rows="5" required />
+              <textarea className="border" id="message" name="message" rows="5" required />
             </div>
 
-            <button type="submit" disabled={sending} className="contact-submit-btn common-text glow">
+            <button type="submit" disabled={sending} className="contact-submit-btn border border-radius buttom-degrade common-text glow">
               {sending ? contact.sending : contact.send}
             </button>
 

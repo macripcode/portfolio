@@ -4,7 +4,7 @@
   gap: 30px;
   width: 100%;
   padding: 40px 30px;
-  border-radius: 12px;
+  background: transparent;
 }
 
 @media (min-width: 1024px) {
@@ -86,15 +86,10 @@
 .form-group textarea {
   padding: 10px 14px;
   border-radius: 8px;
-  border: 2px solid transparent;
-  background-image:
-    linear-gradient(var(--background), var(--background)),
-    linear-gradient(135deg, var(--accent-one), var(--accent-two));
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
   color: var(--main-text);
   font-family: var(--font-body);
   font-size: 16px;
+  font-weight: bold;
   outline: none;
   transition: box-shadow 0.3s ease;
 }
@@ -110,17 +105,9 @@
 
 .contact-submit-btn {
   padding: 12px 24px;
-  border-radius: 12px;
-  border: 2px solid transparent;
-  background-image:
-    linear-gradient(var(--accent-two), var(--accent-two)),
-    linear-gradient(135deg, var(--accent-one), var(--accent-two));
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
   color: var(--main-text);
   cursor: pointer;
   font-weight: bold;
-  transition: box-shadow 0.3s ease;
 }
 
 .contact-submit-btn:hover {
