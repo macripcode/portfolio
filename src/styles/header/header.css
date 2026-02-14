@@ -7,7 +7,7 @@
   justify-content: space-between;
   color: var(--main-text);
   padding: 2%;
-  border-bottom: 1px solid var(--background-second);
+  border-bottom: 1px solid var(--main-text);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
