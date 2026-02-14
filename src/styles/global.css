@@ -55,7 +55,7 @@ body.light .app-background {
 }
 
 .glow:hover {
-  box-shadow: 0 0 40px color-mix(in srgb, var(--glow) 50%, transparent);
+  box-shadow: 0 0 40px color-mix(in srgb, var(--glow) 90%, transparent);
 }
 
 .glow-text {

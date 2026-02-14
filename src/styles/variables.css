@@ -14,7 +14,7 @@ body.light {
   --main-text: #291f37;
   --accent-one: var(--dark-pink);
   --accent-two: var(--purple-blue);
-  --glow: var(--light-pink);
+  --glow: var(--purple-blue);
 }
 
 body.dark {
@@ -22,5 +22,5 @@ body.dark {
   --main-text: #E5E7EB;
   --accent-one: var(--purple-ligth);
   --accent-two: var(--purple-blue);
-  --glow: var(--purple-light);
+  --glow: var(--purple-pink);
 }
