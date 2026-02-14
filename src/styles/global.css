@@ -5,49 +5,23 @@ html {
   scroll-behavior: smooth;
 }
 
-/*Background*/
-.stars {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-
-  background-image:
-    radial-gradient(var(--background) 1px, transparent 1px);
-  background-size: 1px 1px;
-
-  opacity: 0.35;
+.app-background {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.5s ease;
 }
 
-.aurora {
-  position: absolute;
-  inset: 0;
-
-  background:
-    radial-gradient(circle at 5% 5%, var(--accent-one), transparent 10%),
-    radial-gradient(circle at 50% 50%, var(--background), transparent 100%),
-    radial-gradient(circle at 95% 95%, var(--accent-two), transparent 20%);
-
-  filter: blur(120px);
-  opacity: 0.7;
-
+body.dark .app-background {
+  background-image: url('/assets/background-dark.png');
 }
 
-@keyframes auroraFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+body.light .app-background {
+  background-image: url('/assets/background-light.png');
 }
 
-.stars,
-.aurora {
-  position: fixed;
-  inset: 0;
-
-  pointer-events: none;
-
-  z-index: -1; 
-}
-/*----------*/
 .container-section{
   padding-top: 30px;
   padding-bottom: 30px;

@@ -19,16 +19,16 @@ function App() {
   }, [theme]);
 
   return (
-    <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <Header />
-      <Hero />
-      <Experience />
-      <Work />
-      {/*<Languages />*/}
-      <Contact />
-      <div className="stars"></div>
-      <div className="aurora" />
-    </main>
+    <div className="app-background">
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <Header />
+        <Hero />
+        <Experience />
+        <Work />
+        {/*<Languages />*/}
+        <Contact />
+      </main>
+    </div>
   );
 }
 
