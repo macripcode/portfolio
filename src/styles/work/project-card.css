@@ -45,8 +45,8 @@
 }
 
 .projectcard-techgrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
