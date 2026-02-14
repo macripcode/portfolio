@@ -1,21 +1,12 @@
 :root {
-  --cyan: #31C6EB;
-  --purple: #3a4d8a;
-  --dark-blue: #060045;
   --font-heading: 'Julius Sans One', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  /*Light*/
   --light-pink: #fdd9fc;
-  --light-blue: #3a2492;
   --dark-pink: #a557a0;
   --purple-blue: #3a2492;
-   
-
-  /*Dark*/
-  --light-purple: #ad80db; 
-  --purple-medium: #6c32b1;
-  --purple-dark: #220f3a;
+  --purple-ligth: #9289f7;
+  --purple-pink: #ad80db;
 }
 
 body.light {
@@ -23,15 +14,13 @@ body.light {
   --main-text: #291f37;
   --accent-one: var(--dark-pink);
   --accent-two: var(--purple-blue);
-  --glow: var(--light-pink)
+  --glow: var(--light-pink);
 }
 
 body.dark {
   --background: #0B0F1A;
   --main-text: #E5E7EB;
-  --accent-one: var(--cyan);
-  --accent-two: var(--dark-blue);
-  --glow: var(--light-purple);
+  --accent-one: var(--purple-ligth);
+  --accent-two: var(--purple-blue);
+  --glow: var(--purple-light);
 }
-
-

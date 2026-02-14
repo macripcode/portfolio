@@ -53,10 +53,10 @@ function Hero() {
               ))}
             </ul>
             <div className="hero-buttons common-text">
-              <a href="#work" className="btn-projects glow">
+              <a href="#work" className="btn-projects border border-radius glow">
                 {viewProjects}
               </a>
-              <a href="#contact" className="btn-contact glow">
+              <a href="#contact" className="btn-contact border border-radius glow">
                 {contactMe}
               </a>
             </div>

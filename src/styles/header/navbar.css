@@ -38,7 +38,7 @@
 }
 
 .nav-links:hover {
-  color: var(--accent-two);
+  color: var(--accent-one);
   text-shadow: 0 0 8px color-mix(in srgb, var(--accent-two) 50%, transparent);
 }
 

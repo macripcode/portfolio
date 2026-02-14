@@ -1,5 +1,7 @@
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
+import ChildFriendlyIcon from "@mui/icons-material/ChildFriendly";
+import ConstructionIcon from "@mui/icons-material/Construction";
 import { motion } from "framer-motion";
 import { useTranslation } from "../../context/TranslationContext";
 
@@ -22,6 +24,10 @@ function Experience() {
           </div>
 
           <div className="timeline">
+            <div className="timeline-cap timeline-cap-start">
+              <span><ConstructionIcon /></span>
+            </div>
+
             {careerPath.map((item, index) => {
               const { type, date, rol, location, projects } = item;
               const side = index % 2 === 0 ? "left" : "right";
@@ -40,7 +46,7 @@ function Experience() {
                     {isJob ? <WorkIcon /> : <SchoolIcon />}
                   </div>
 
-                  <div className="timeline-content glass-effect border-glow glow-static">
+                  <div className="timeline-content glass-effect border glow-static">
                     <h3>{rol}</h3>
                     <span className="timeline-date">{date}</span>
                     <h4>{location}</h4>
@@ -62,6 +68,10 @@ function Experience() {
                 </motion.div>
               );
             })}
+
+            <div className="timeline-cap timeline-cap-end">
+              <span><ChildFriendlyIcon /></span>
+            </div>
           </div>
         </div>
       </div>

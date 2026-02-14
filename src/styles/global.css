@@ -23,13 +23,23 @@ body.light .app-background {
 }
 
 .glass-effect {
-  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(7px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.border-glow {
+.border {
   border: 3px solid var(--accent-two);
+}
+
+.border-radius{
+  border-radius: 10px;
+}
+
+.buttom-degrade {
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    var(--accent-one) 100%
+  );
 }
 
 .container-section{
@@ -41,11 +51,11 @@ body.light .app-background {
 }
 
 .glow-static {
-  box-shadow: 0 0 40px color-mix(in srgb, var(--accent-one) 50%, transparent);
+  box-shadow: 0 0 40px color-mix(in srgb, var(--glow) 50%, transparent);
 }
 
 .glow:hover {
-  box-shadow: 0 0 40px color-mix(in srgb, var(--accent-one) 50%, transparent);
+  box-shadow: 0 0 40px color-mix(in srgb, var(--glow) 50%, transparent);
 }
 
 .glow-text {
@@ -53,7 +63,7 @@ body.light .app-background {
 }
 
 .glow-text:hover {
-  text-shadow: 0 0 20px color-mix(in srgb, var(--accent-one) 85%, transparent);
+  text-shadow: 0 0 20px color-mix(in srgb, var(--glow) 85%, transparent);
 }
 
 .gradient {
@@ -97,47 +107,4 @@ body.light .app-background {
 
 .under-space-title {
   margin-bottom: 30px;
-}
-
-.card{
-  margin: 0 auto;
-  padding: 20px;
-  width: 300px;
-  background: var(--background);
-  text-align: center;
-  border-radius: 10px;
-  position: relative;
-}
-
-@property --angle{
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.card::after, .card::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: conic-gradient(from var(--angle), var(--accent-one),var(--accent-two),  var(--background), var(--accent-one),  var(--accent-two),var(--background));
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: 1;
-  padding: 3px;
-  border-radius: 10px;
-  animation: 3s spin linear infinite;
-}
-.card::before{
-  filter: blur(15px);
-  opacity: 1;
-}
-@keyframes spin{
-  from{
-    --angle: 0deg;
-  }
-  to{
-    --angle: 360deg;
-  }
 }

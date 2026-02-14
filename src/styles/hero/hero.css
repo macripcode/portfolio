@@ -59,7 +59,6 @@
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
-  border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.2s ease;
@@ -71,13 +70,19 @@
 }
 
 .btn-projects {
-  background-color: var(--accent-one);
-  color: #fff;
+  background: linear-gradient(
+    to bottom,
+    transparent 20%,
+    color-mix(in srgb, var(--purple-pink) 40%, transparent) 100%
+  );
 }
 
 .btn-contact {
-  background-color: var(--accent-two);
-  color: #fff;
+  background: linear-gradient(
+    to bottom,
+    transparent 20%,
+    color-mix(in srgb, var(--purple-ligth) 40%, transparent) 100%
+  );
 }
 
 .hero-video-column {
