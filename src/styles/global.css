@@ -22,6 +22,12 @@ body.light .app-background {
   background-image: url('/assets/background-light.png');
 }
 
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .container-section{
   padding-top: 30px;
   padding-bottom: 30px;

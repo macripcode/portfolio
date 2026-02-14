@@ -1,29 +1,32 @@
 :root {
   --cyan: #31C6EB;
-  --purple: #523A8A;
-  --dark-blue: #14477d;
+  --purple: #3a4d8a;
+  --dark-blue: #060045;
   --font-heading: 'Julius Sans One', sans-serif;
   --font-body: 'Inter', sans-serif;
+
+  /*Light*/
+  --light-pink: #fdd9fc;
+  --light-blue: #8dc3f9;
+
+  /*Dark*/
+  --light-purple: #ad80db; 
+  --purple-medium: #6c32b1;
+  --purple-dark: #220f3a;
 }
 
 body.dark {
   --background: #0B0F1A;
-  --background-second: #2A1F4D;
   --main-text: #E5E7EB;
   --accent-one: var(--cyan);
   --accent-two: var(--purple);
-  --accent-three: var(--dark-blue);
-  --support-ui-one: #6B7280;
-  --support-ui-two: #1F2937;
+  --glow: var(--light-purple);
 }
 
 body.light {
   --background: #FFFFFF;
-  --background-second: #E5E7EB;
-  --main-text: #1F2937;
-  --accent-one: var(--cyan);
-  --accent-two: var(--purple);
-  --accent-three: var(--dark-blue);
-  --support-ui-one: #CBD5E1;
-  --support-ui-two: #CBD5E1;
+  --main-text: #291f37;
+  --accent-one: var(--purple-medium);
+  --accent-two: var(--dark-blue);
+  --glow: var(--light-pink)
 }
