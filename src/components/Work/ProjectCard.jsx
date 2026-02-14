@@ -6,7 +6,7 @@ function ProjectCard({ title, description, links, techStack, resourceUrl, resour
   const projectState = state || estado;
 
   return (
-    <div className="projectcard-div gradient-low">
+    <div className="projectcard-div glass-effect">
       <div className="image-project-card">
         {resourceType === "image" && (
           <img src={resourceUrl} alt={title} />
@@ -26,7 +26,7 @@ function ProjectCard({ title, description, links, techStack, resourceUrl, resour
 
       <div className="projectcard-links">
         {links.map((link, i) => (
-          <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="projectcard-link-btn common-text">
+          <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="projectcard-link-btn border border-radius buttom-degrade common-text">
             {link.text}
           </a>
         ))}

@@ -28,7 +28,7 @@ function Slider({ projects }) {
   return (
     <div className="slider-container">
       <motion.div
-        className="slider-active glow-static"
+        className="slider-active border glow-static"
         custom="left"
         variants={scrollReveal}
         initial="hidden"
@@ -60,7 +60,7 @@ function Slider({ projects }) {
         {thumbnailIndices.map((projIndex) => (
           <motion.div
             key={projIndex}
-            className="slider-thumbnail"
+            className="slider-thumbnail border"
             onClick={() => setActiveIndex(projIndex)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}

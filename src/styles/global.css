@@ -38,7 +38,7 @@ body.light .app-background {
   background: linear-gradient(
     to bottom,
     transparent 40%,
-    var(--accent-one) 100%
+    color-mix(in srgb, var(--accent-one) 40%, transparent) 100%
   );
 }
 
