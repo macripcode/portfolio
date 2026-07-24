@@ -1,7 +1,4 @@
 :root {
-  --font-heading: 'Julius Sans One', sans-serif;
-  --font-body: 'Inter', sans-serif;
-
   --light-pink: #fdd9fc;
   --dark-pink: #a557a0;
   --purple-blue: #3a2492;
@@ -10,6 +7,9 @@
 }
 
 body.light {
+  --font-heading: 'Julius Sans One', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
   --background: #FFFFFF;
   --main-text: #291f37;
   --accent-one: var(--dark-pink);
@@ -18,9 +18,12 @@ body.light {
 }
 
 body.dark {
-  --background: #0B0F1A;
-  --main-text: #E5E7EB;
-  --accent-one: var(--purple-ligth);
-  --accent-two: var(--purple-blue);
-  --glow: var(--purple-pink);
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+
+  --background: oklch(14% 0.025 260);
+  --main-text: oklch(96% 0.01 260);
+  --accent-one: oklch(78% 0.14 200);
+  --accent-two: oklch(74% 0.14 300);
+  --glow: oklch(74% 0.14 300);
 }

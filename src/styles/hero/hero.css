@@ -85,6 +85,22 @@
   );
 }
 
+body.dark .btn-projects {
+  background: linear-gradient(
+    to bottom,
+    transparent 20%,
+    color-mix(in oklch, var(--accent-two) 40%, transparent) 100%
+  );
+}
+
+body.dark .btn-contact {
+  background: linear-gradient(
+    to bottom,
+    transparent 20%,
+    color-mix(in oklch, var(--accent-one) 40%, transparent) 100%
+  );
+}
+
 .hero-video-column {
   width: 100%;
 }

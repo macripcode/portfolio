@@ -4,6 +4,7 @@ import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
 import Languages from "./components/Languages/Languages";
 import Contact from "./components/Contact/Contact";
+import GalaxyBackground from "./components/GalaxyBackground/GalaxyBackground";
 
 import { useContext, useState, useEffect } from "react";
 
@@ -20,7 +21,8 @@ function App() {
 
   return (
     <div className="app-background">
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <GalaxyBackground />
+      <main className="px-4 sm:px-6 lg:px-8">
         <Header />
         <Hero />
         <Experience />

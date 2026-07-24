@@ -1,5 +1,6 @@
 @import './variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -7,19 +8,6 @@ html {
 
 .app-background {
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  transition: background-image 0.5s ease;
-}
-
-body.dark .app-background {
-  background-image: url('/assets/background-dark.png');
-}
-
-body.light .app-background {
-  background-image: url('/assets/background-light.png');
 }
 
 .glass-effect {
